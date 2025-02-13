@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fafaf8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .lang-buttons {
+    margin-top: 10px;
+}
+
+.lang-btn {
+    margin: 5px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.lang-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Main content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Section titles */
+h2, h3 {
+    color: #333;
+}
+
+/* Mall and Hotel cards */
+.malls, .hotels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mall, .hotel {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.mall img, .hotel img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.mall h3, .hotel h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.mall p, .hotel p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.mall iframe, .hotel iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/* Dark Mode Styles */
+body.dark-mode header {
+    background-color: #222;
+}
+
+body.dark-mode nav ul li a {
+    color: #fff;
+}
+
+body.dark-mode footer {
+    background-color: #222;
+    color: #fff;
+    text-align: left;
+}
