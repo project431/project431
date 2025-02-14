@@ -19,7 +19,13 @@ header {
     padding: 20px 0;
     text-align: center;
 }
-
+.header-icon {
+    width: 200px; /* Adjust icon size */
+    height: auto;
+    margin-left: 1000px;
+    
+    
+}
 header h1 {
     margin: 0;
 }

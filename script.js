@@ -8,18 +8,20 @@ function toggleLanguage() {
 function changeLanguage(lang) {
     const translations = {
         en: {
+            /*button */
             "home-button": "home",
             "mall-button": "mall",
             "hotels-button": "hotels",
-            "where to eat-button": "where to eat",
+            "eat-button": "where to eat",
             "healthcare-button":"healthcare",
-            "Mosques-button" :"Mosques",
+            "mosques-button" :"Mosques",
             "entertainment-button":"entertainment",
-
+            /* home page */
             "main-title": "Welcome to Jubail City",
             "about-title": "About Jubail",
             "about-text1":"During the Islamic era, Jubail served as a resting stop for traders and travelers moving between Gulf ports, gradually developing over the centuries. In 1933, an ancient water well known as Ain Jubail was discovered, marking an important historical site in the city.",
             "about-text": "Jubail, located on the Arabian Gulf coast in Saudi Arabia’s Eastern Province, is one of the oldest human settlements in the region, dating back over 7,000 years. In 1975, the city underwent a major transformation with the establishment of Jubail Industrial City, now the world’s largest industrial city, home to numerous petrochemical plants and oil refineries. This development has made Jubail a symbol of industry in Saudi Arabia and a key contributor to the nation’s economic diversification.",
+             /* mall pageb */
             "shopping-title": "Shopping Malls in Jubail",
             "mall-name-1": "Ghalibaria Mall",
             "mall-description-1": "Ghalibaria Mall is one of the prominent malls in Jubail.",
@@ -47,19 +49,24 @@ function changeLanguage(lang) {
             "hotel-description-4": "Sheraton Jubail Hotel is an ideal choice for accommodation.",
             "hotel-location-4": "Location: Jubail - Google Maps: Sheraton Jubail Hotel"
         },
+
         ar: {
+           /*button */
             "home-button": "الرئيسية",
             "mall-button": "مراكز التسوق",
             "hotels-button": "الفنادق",
-            "where to eat-button": " اماكن الاكل",
+            "eat-button": " الاكل",
             "healthcare-button":"الصحة",
-            "Mosques-button" :"المساجد",
-            "entertainment-button":"اماكن الترفيه",
-
+            "mosques-button" :"المساجد",
+            "entertainment-button":" الترفيه",
+           
+            /* home page */
             "main-title": "مرحبًا بكم في مدينة الجبيل",
             "about-title": "عن الجبيل",
             "about-text":"تُعدُّ مدينة الجبيل من أقدم المدن الساحلية في المملكة العربية السعودية، حيث يعود تاريخها إلى أكثر من 7,000 عام .كانت تُعرف قديمًا بأنها مركزٌ مهمٌ للصيد والتجارة البحرية، نظرًا لموقعها الاستراتيجي على ساحل الخليج العربي ",
             "about-text1":"في العصور الإسلامية، كانت الجبيل محطة استراحة للتجار والمسافرين بين الموانئ الخليجية، وشهدت تطورًا تدريجيًا حتى العصر الحديث.  في عام 1933، تم اكتشاف بئر ماء قديمة تُعرف باسم عين الجبيل، والتي تُعد من العلامات التاريخية للمدينة",
+           
+            /* mall pageb */
             "shopping-title": "مراكز التسوق في الجبيل",
             "mall-name-1": "غالبريا مول",
             "mall-description-1": "غالبريا مول هو أحد أبرز المولات في الجبيل.",
@@ -73,6 +80,8 @@ function changeLanguage(lang) {
             "mall-name-4": "سوق الفيحاء",
             "mall-description-4": "يُعد سوق الفيحاء من أبرز الأسواق الشعبية في الجبيل.",
             "mall-location-4": "الموقع: الجبيل - الموقع على خرائط جوجل: سوق الفيحاء", 
+           
+            /*hotels page*/
             "hotels-title": "أفضل الفنادق في الجبيل",
             "hotel-name-1": "فندق الجبيل روتانا",
             "hotel-description-1": "فندق روتانا الجبيل هو من أفخم الفنادق في المدينة.",
@@ -86,6 +95,7 @@ function changeLanguage(lang) {
             "hotel-name-4": "فندق شيراتون الجبيل",
             "hotel-description-4": "فندق شيراتون الجبيل يعد من الخيارات المثالية للإقامة.",
             "hotel-location-4": "الموقع: الجبيل - الموقع على خرائط جوجل: فندق شيراتون الجبيل"
+
         }
     };
 
