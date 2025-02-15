@@ -47,7 +47,9 @@ function changeLanguage(lang) {
             "hotel-location-3": "Location: Jubail - Google Maps: Intercontinental Jubail Hotel",
             "hotel-name-4": "Sheraton Jubail Hotel",
             "hotel-description-4": "Sheraton Jubail Hotel is an ideal choice for accommodation.",
-            "hotel-location-4": "Location: Jubail - Google Maps: Sheraton Jubail Hotel"
+            "hotel-location-4": "Location: Jubail - Google Maps: Sheraton Jubail Hotel",
+
+            "eat-title":"places to eat",
         },
 
         ar: {
@@ -94,7 +96,9 @@ function changeLanguage(lang) {
             "hotel-location-3": "الموقع: الجبيل - الموقع على خرائط جوجل: فندق إنتركونتيننتال الجبيل",
             "hotel-name-4": "فندق شيراتون الجبيل",
             "hotel-description-4": "فندق شيراتون الجبيل يعد من الخيارات المثالية للإقامة.",
-            "hotel-location-4": "الموقع: الجبيل - الموقع على خرائط جوجل: فندق شيراتون الجبيل"
+            "hotel-location-4": "الموقع: الجبيل - الموقع على خرائط جوجل: فندق شيراتون الجبيل",
+           
+            "eat-title":"أماكن لتناول الطعام",
 
         }
     };

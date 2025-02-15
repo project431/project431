@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #fafaf8;
+    background-color: #fcfcfc;
     color: #333;
     margin: 0;
     padding: 0;
@@ -139,3 +139,9 @@ body.dark-mode footer {
     color: #fff;
     text-align: left;
 }
+.navbar { 
+    backdrop-filter :blur(30xp);    
+    box-shadow: 0xp 0xp 30xp rgba(227, 228, 237, 0.37);
+    border:2px solid rgba(0, 0, 0, 0.18)
+
+} 
