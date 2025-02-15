@@ -8,13 +8,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
     backdrop-filter: blur(1px); /* Adjust blur intensity */
 }
-.text-background {
-    background-color: rgb(255, 255, 255); /* Semi-transparent black */
-    color: rgb(0, 0, 0); /* Text color */
-    padding: 10px; /* Space inside the box */
-    display: inline-block; /* Only covers the text */
-    border-radius: 5px; /* Rounded edges */
-}
+
 
 body.dark-mode {
     background-color: #333;
@@ -97,43 +91,44 @@ h2, h3 {
     color: #333;
 }
 
-/* Mall and Hotel cards */
-.malls, .hotels {
+/* Card Layout */
+.malls, .hotels, .mosques, .entertainment, .eat, .healthcare {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.mall, .hotel {
+.mall, .hotel, .mosques, .entertainment, .eat, .healthcare {
     background: #fff;
     padding: 20px;
     margin: 10px;
-    width: 30%;
+    width: 30%; /* Adjust width for responsive design */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
 
-.mall img, .hotel img {
+.mall img, .hotel img, .mosques img, .entertainment img, .eat img, .healthcare img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
-.mall h3, .hotel h3 {
+.mall h3, .hotel h3, .mosques h3, .entertainment h3, .eat h3, .healthcare h3 {
     font-size: 1.5rem;
     margin-top: 10px;
 }
 
-.mall p, .hotel p {
+.mall p, .hotel p, .mosques p, .entertainment p, .eat p, .healthcare p {
     font-size: 1rem;
     margin-top: 5px;
 }
 
-.mall iframe, .hotel iframe {
+.mall iframe, .hotel iframe, .mosques iframe, .entertainment iframe, .eat iframe, .healthcare iframe {
     width: 100%;
     height: 300px;
     border: none;
 }
+
 
 /* Dark Mode Styles */
 body.dark-mode header {

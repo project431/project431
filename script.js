@@ -48,8 +48,11 @@ function changeLanguage(lang) {
             "hotel-name-4": "Sheraton Jubail Hotel",
             "hotel-description-4": "Sheraton Jubail Hotel is an ideal choice for accommodation.",
             "hotel-location-4": "Location: Jubail - Google Maps: Sheraton Jubail Hotel",
-
+             /* place to eat page*/
             "eat-title":"places to eat",
+
+             /* mosques page*/
+           "mosques-title":"mosques",
         },
 
         ar: {
@@ -97,8 +100,11 @@ function changeLanguage(lang) {
             "hotel-name-4": "فندق شيراتون الجبيل",
             "hotel-description-4": "فندق شيراتون الجبيل يعد من الخيارات المثالية للإقامة.",
             "hotel-location-4": "الموقع: الجبيل - الموقع على خرائط جوجل: فندق شيراتون الجبيل",
-           
+           /* place to eat*/
             "eat-title":"أماكن لتناول الطعام",
+
+            /* mosques page*/
+           "mosques-title":"المساجد",
 
         }
     };
