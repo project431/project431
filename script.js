@@ -23,12 +23,20 @@ function changeLanguage(lang) {
             "about-text": "Jubail, located on the Arabian Gulf coast in Saudi Arabia’s Eastern Province, is one of the oldest human settlements in the region, dating back over 7,000 years. In 1975, the city underwent a major transformation with the establishment of Jubail Industrial City, now the world’s largest industrial city, home to numerous petrochemical plants and oil refineries. This development has made Jubail a symbol of industry in Saudi Arabia and a key contributor to the nation’s economic diversification.",
              /* mall pageb */
             "shopping-title": "Shopping Malls in Jubail",
-            "mall-name-1": "Ghalibaria Mall",
-            "mall-description-1": "Ghalibaria Mall is one of the prominent malls in Jubail.",
-            "mall-location-1": "Location: Jubail - Google Maps: Ghalibaria Mall",
+            "mall-name-1": "Galleria Mall",
+            "mall-description-1": "Galleria Mall is considered one of the most prominent malls in Jubail and attracts visitors thanks to the variety of shops that offer international brands in clothing, accessories, cosmetics and electronics, such as H&M, CenterPoint, and others... It also contains many restaurants that offer local and international cuisine such as McDonald's, Manousha Al Reef, Starbucks, and others....",
+            "mall-location": "Location: Jubail - Google Maps:",
+            "mall-Features-1":"Features: It is located in the middle of the city and contains the best perfume shops.",
+            "mall-Services-1":"Services: shops, restaurants, cafes, cosmetics shops",
+            "mall-link-1":"Galleria Mall - Jubail",
+
             "mall-name-2": "Alfanatir Mall",
-            "mall-description-2": "Alfanatir Mall is a distinctive shopping center.",
-            "mall-location-2": "Location: Jubail - Google Maps: Alfanatir Mall",
+            "mall-description-2": "Fanateer Mall has been renovated and developed to become a premium shopping destination in Jubail. It now houses a wide range of stores including gold and accessories shops such as Al-Ghamdi Gold Shop, in addition to Abaya shops. It also houses many restaurants and cafes that offer a variety of options for visitors such as Subway, Cone Zone and entertainment areas for children such as Jumbo Lane, making it an ideal place for shopping and entertainment.",
+            "mall-Features-2":"Features: It is modern and contains the latest shops, cafes, restaurants, and others.",
+            "mall-Services-2":"Services: Gold shops, accessories, abayas, cafes, restaurants, entertainment.",
+            "mall-link-2":": Fanateer Mall - Jubail",
+
+
             "mall-name-3": "Alhuwailat Mall",
             "mall-description-3": "Alhuwailat Mall features various stores.",
             "mall-location-3": "Location: Jubail - Google Maps: Alhuwailat Mall",
@@ -73,12 +81,20 @@ function changeLanguage(lang) {
            
             /* mall pageb */
             "shopping-title": "مراكز التسوق في الجبيل",
-            "mall-name-1": "غالبريا مول",
-            "mall-description-1": "غالبريا مول هو أحد أبرز المولات في الجبيل.",
-            "mall-location-1": "الموقع: الجبيل - الموقع على خرائط جوجل: غالبريا مول",
+
+            "mall-name-1": "غاليريا مول",
+            "mall-description-1": "ُعتبر غاليريا مول من أبرز المولات في الجبيل ويستقطب الزوار بفضل تنوع المحلات التجارية التي تقدم الماركات العالمية في الملابس والإكسسوارات ومستحضرات التجميل والإلكترونيات, مثل محل درعة H&M,CenterPoint, وغيرهم... . كما يحتوي على العديد من المطاعم التي تقدم المأكولات المحلية والعالمية مثل ماكدونالدز و منؤوشة الريف وستاربكس وغيرها....",
+            "mall-location-1": "الموقع على خرائط جوجل",
+            "mall-Features-1":"المميزات: يتميز بموقعه الذي يقع بوسط المدينة واحتواءه على افضل متاجر العطور",
+            "mall-Services-1":"الخدمات: محلات تجارية، مطاعم، مقاهي، محلات مستحضرات تجميل.",
+            "mall-link-1":": غاليريا مول - الجبيل",
+
             "mall-name-2": "الفناتير مول",
-            "mall-description-2": "الفناتير مول هو مركز تسوق مميز بعد تجديده بالكامل.",
-            "mall-location-2": "الموقع: الجبيل - الموقع على خرائط جوجل: الفناتير مول",
+            "mall-description-2": "تم تجديد وتطوير الفناتير مول ليصبح وجهة تسوق متميزة في الجبيل. يضم الآن مجموعة واسعة من المتاجر بما في ذلك محلات الذهب والإكسسوارات مثل محل الغامدي للذهب، بالإضافة إلى محلات العبايات. كما يضم العديد من المطاعم والمقاهي التي تقدم خيارات متنوعة للزوار مثل صب واي, كون زون وأماكن ترفيهية للأطفال مثل جامبو لين مما يجعله مكانًا مثاليًا للتسوق والترفيه.",
+            "mall-Features-2":"المميزات: يتميز بحداثته واحتوائه على احدث المحلات من المقاهي والمطاعم وغيرها",
+            "mall-Services-2":"الخدمات: محلات ذهب، إكسسوارات، عبايات، مقاهي، مطاعم, ترفية",
+            "mall-link-2":": الفناتير مول - الجبيل",
+
             "mall-name-3": "الحويلات مول",
             "mall-description-3": "الحويلات مول هو مول متنوع يضم العديد من المحلات التجارية المميزة.",
             "mall-location-3": "الموقع: الجبيل - الموقع على خرائط جوجل: الحويلات مول",
