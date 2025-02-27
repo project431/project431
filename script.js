@@ -43,19 +43,20 @@ function changeLanguage(lang) {
             "mall-name-4": "Alfaiha Market",
             "mall-description-4": "Alfaiha Market is one of the prominent local markets in Jubail.",
             "mall-location-4": "Location: Jubail - Google Maps: Alfaiha Market",
+           
             "hotels-title": "Best Hotels in Jubail",
-            "hotel-name-1": "Jubail Rotana Hotel",
-            "hotel-description-1": "Jubail Rotana is one of the finest hotels in the city.",
-            "hotel-location-1": "Location: Jubail - Google Maps: Jubail Rotana Hotel",
+            "hotel-name-1": "Park Inn Radisson Jubail",
+            "hotel-description-1":"Located near Najd Park and Jubail Corniche, it offers comfortable rooms with Wi-Fi and free parking, and is close to shopping and entertainment centers.",
+            "hotel-location": "Location on Google Maps",
             "hotel-name-2": "Coral Jubail Hotel",
             "hotel-description-2": "Coral Jubail Hotel is a great choice for travelers looking for comfort.",
-            "hotel-location-2": "Location: Jubail - Google Maps: Coral Jubail Hotel",
+            
             "hotel-name-3": "Intercontinental Jubail Hotel",
             "hotel-description-3": "A luxury resort on the beach with beautiful gardens.",
-            "hotel-location-3": "Location: Jubail - Google Maps: Intercontinental Jubail Hotel",
+            
             "hotel-name-4": "Sheraton Jubail Hotel",
             "hotel-description-4": "Sheraton Jubail Hotel is an ideal choice for accommodation.",
-            "hotel-location-4": "Location: Jubail - Google Maps: Sheraton Jubail Hotel",
+            
              /* place to eat page*/
             "eat-title":"places to eat",
 
