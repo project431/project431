@@ -16,12 +16,15 @@ body.dark-mode {
 }
 
 header {
-    background: url('https://lh5.googleusercontent.com/p/AF1QipMKntrpxlfgwzrlQyCjaBNYfuqIo25YSBAvpe9Y=w426-h240-k-no') no-repeat center center fixed;
-    background-size:cover;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Al_jubail.jpg/800px-Al_jubail.jpg') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(30px); /* Adjust blur intensity */
     background-color: #333;
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    border-bottom: 1px solid #ccc; /* Adds a border under the header */
+    backdrop-filter: blur(30px); /* Adjust blur intensity */   
 }
 .header-icon {
     width: 200px; /* Adjust icon size */
@@ -155,4 +158,37 @@ body.dark-mode footer {
     margin-top: 20px;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.text-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-image-container p {
+    width: 80%; /* Adjusts the text width */
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.text-image-container img {
+    width: 35%; /* Adjust the image size */
+    height: auto;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+
+}
+hr {
+    width: 100%;  /* Makes the line full width */
+    border: none;
+    height: 2px;
+    background-color: #ccc; /* Adjust color as needed */
+    margin: 20px 0; /* Adds space above and below */
+}
+
+.vertical-line {
+    width: 2px; /* Line width */
+    background-color: #ccc; /* Line color */
+    height: 100px; /* Set the height of the line */
+    margin: 0 20px; /* Space around the line */
 }
