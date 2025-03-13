@@ -31,7 +31,7 @@ function changeLanguage(lang) {
             
             "mall-name-1": "Galleria Mall",
             "mall-description-1": "Galleria Mall is considered one of the most prominent malls in Jubail and attracts visitors thanks to the variety of shops that offer international brands in clothing, accessories, cosmetics and electronics, such as H&M, CenterPoint, and others... It also contains many restaurants that offer local and international cuisine such as McDonald's, Manousha Al Reef, Starbucks, and others....",
-            "mall-location": "Location: Jubail - Google Maps:",
+            "mall-location-1": "Location: Jubail - Google Maps:",
             "mall-Features-1":"Features: It is located in the middle of the city and contains the best perfume shops.",
             "mall-Services-1":"Services: shops, restaurants, cafes, cosmetics shops",
             "mall-link-1":"Galleria Mall - Jubail",
@@ -41,6 +41,7 @@ function changeLanguage(lang) {
             "mall-Features-2":"Features: It is modern and contains the latest shops, cafes, restaurants, and others.",
             "mall-Services-2":"Services: Gold shops, accessories, abayas, cafes, restaurants, entertainment.",
             "mall-link-2":": Fanateer Mall - Jubail",
+            "mall-location-2": "Location: Jubail - Google Maps:",
             
 
             "mall-name-3": "Alhuwailat Mall",
@@ -48,18 +49,21 @@ function changeLanguage(lang) {
             "mall-Features-3":"Features: It is close to the expressway leading to Dammam.",
             "mall-Services-3":"Services: Shops, Hyper Panda, Jarir Bookstore, Cafes, Restaurants.",
             "mall-link-3":"Alhuwailat Mall - Jubail",
+            "mall-location-3": "Location: Jubail - Google Maps:",
 
             "mall-name-4": "Alfaiha Market",
-            "mall-description-4": "Alfaiha Market is one of the prominent local markets in Jubail.",
-            "mall-Features-4":"",
-            "mall-Services-4":"",
+            "mall-description-4": "This market is one of the most prominent popular markets in Jubail, featuring a variety of shops that cater to the needs of residents and visitors. Located in the Al-Faihaa neighborhood of Jubail Industrial City, the Al-Faihaa Market is a vibrant neighborhood that boasts numerous services and facilities.",
+            "mall-Features-4":"Features: Al Fayhaa Market is distinguished by having all your daily needs in one place, from the simplest to the most complex things.",
+            "mall-Services-4":"Services: Vegetable and fruit market, meat and fish market, restaurants and cafes, electrical and plumbing shops",
             "mall-link-4":"Alfaiha Market - Jubail",
+            "mall-location-4": "Location: Jubail - Google Maps:",
 
             "mall-name-5": "Jubail Bay Mall",
-            "mall-description-5": "",
-            "mall-Features-5":"",
-            "mall-Services-5":"",
+            "mall-description-5": "Jubail Bay Mall is a modern shopping mall located in the Jubail Industrial City, Saudi Arabia. It is part of the Jubail Bay project, an integrated commercial and residential development on the city's waterfront. The mall houses a variety of local stores such as Abdul Samad Al Qurashi and international brands such as Balmain, as well as a wide range of restaurants and cafes such as Starbucks and many others (the complex is still new, and many more stores will open in time).",
+            "mall-Features-5":"Features: The largest closed complex in the city, wonderful sea view, includes a ship port",
+            "mall-Services-5":"Services: Restaurants, Cafes, Clothing Stores, Perfumes",
             "mall-link-5":"Jubail Bay Mall - Jubail",
+            "mall-location-5": "Location: Jubail - Google Maps:",
 
             /*hotels page*/
             "hotels-title": "Best Hotels in Jubail",
@@ -109,7 +113,7 @@ function changeLanguage(lang) {
 
             "mall-name-1": "غاليريا مول ",
             "mall-description-1": ">يُعتبر غاليريا مول من أبرز المولات في الجبيل ويستقطب الزوار بفضل تنوع المحلات التجارية التي تقدم الماركات العالمية في الملابس والإكسسوارات ومستحضرات التجميل والإلكترونيات, مثل محل درعة H&M,CenterPoint, وغيرهم... . كما يحتوي على العديد من المطاعم التي تقدم المأكولات المحلية والعالمية مثل ماكدونالدز و منؤوشة الريف وستاربكس وغيرها....",
-            "mall-location": "الموقع على خرائط جوجل ",
+            "mall-location-1": "الموقع على خرائط جوجل ",
             "mall-Features-1":"المميزات: يتميز بموقعه الذي يقع بوسط المدينة واحتواءه على افضل متاجر العطور ",
             "mall-Services-1":"الخدمات: محلات تجارية، مطاعم، مقاهي، محلات مستحضرات تجميل.",
             "mall-link-1":"غاليريا مول - الجبيل",
@@ -119,6 +123,7 @@ function changeLanguage(lang) {
             "mall-Features-2":"المميزات: يتميز بحداثته واحتوائه على احدث المحلات من المقاهي والمطاعم وغيرها",
             "mall-Services-2":" الخدمات: محلات تجارية، مطاعم، مقاهي، محلات مستحضرات تجميل.",
             "mall-link-2":" الفناتير مول - الجبيل",
+            "mall-location-2": "الموقع على خرائط جوجل ",
             
 
             "mall-name-3": "الحويلات مول",
@@ -126,18 +131,21 @@ function changeLanguage(lang) {
             "mall-Features-3":"المميزات: يتميز بقربة من الخط السريع المؤدي الى الدمام ",
             "mall-Services-3":" الخدمات: محلات تجارية، هايبر بندة، مكتبة جرير، مقاهي، مطاعم.",
             "mall-link-3":"الحويلات مول  - الجبيل " ,
+            "mall-location-3": "الموقع على خرائط جوجل ",
 
-            "mall-name-4": "Alfaiha Market",
-            "mall-description-4": "Alfaiha Market is one of the prominent local markets in Jubail.",
-            "mall-Features-4":"",
-            "mall-Services-4":"",
-            "mall-link-4":"Alfaiha Market - Jubail",
+            "mall-name-4": "سوق الفيحاء",
+            "mall-description-4": " يُعد هذا السوق من أبرز الأسواق الشعبية في مدينة الجبيل، حيث يضم مجموعة متنوعة من المحلات التجارية التي تلبي احتياجات السكان والزوار. يقع سوق الفيحاء في حي الفيحاء بمدينة الجبيل الصناعية، وهو من الأحياء الحيوية التي تضم العديد من الخدمات والمرافق",
+            "mall-Features-4":"المميزات: يتميز سوق الفيحاء بوجود جميع احتياجاتك اليومية في مكان واحد من ابسط الأشياء الى أعقدها.",
+            "mall-Services-4":"الخدمات: سوق الخضروات والفواكة, سوق اللحوم والأسماك, المطاعم والمقاهي, محلات الكهرباء والسباكة",
+            "mall-link-4":" سوق الفيحاء - الجبيل",
+            "mall-location-4": "الموقع على خرائط جوجل ",
 
             "mall-name-5": "Jubail Bay Mall",
-            "mall-description-5": "",
-            "mall-Features-5":"",
-            "mall-Services-5":"",
-            "mall-link-5":"Jubail Bay Mall - Jubail",
+            "mall-description-5": " الجبيل باي مول هو مركز تسوّق حديث يقع في مدينة الجبيل الصناعية بالمملكة العربية السعودية. يُعد جزءًا من مشروع  جبيل باي، الذي يُعتبر تطويرًا تجاريًا وسكنيًا متكاملًا على الواجهة البحرية للمدينة. يضم المول مجموعة متنوعة من المتاجر المحلية مثل عبدالصمد القرشي والعالمية مثل بالمان، بالإضافة إلى خيارات متعددة من المطاعم والمقاهي مثل ستاربكس وغيرها الكثير(المجمع لازال جديد وع الزمن سيتم افتتاح العديد من المتاجر الأخرى).",
+            "mall-Features-5":"المميزات: أكبر مجمع مغلق في المدينة, اطلالة رائعة على البحر, يضم ميناء للسفن",
+            "mall-Services-5":"الخدمات: المطاعم, المقاهي, محلات ملابس, عطور",
+            "mall-link-5":"الجبيل باي مول - الجبيل ",
+            "mall-location-5": "الموقع على خرائط جوجل ",
             /*hotels page*/
             "hotels-title": "أفضل الفنادق في الجبيل",
             "hotel-name-1": "بارك إن راديسون الجبيل الصناعية",
