@@ -28,6 +28,7 @@ function changeLanguage(lang) {
 
             /* mall pageb */
             "shopping-title": "Shopping Malls in Jubail",
+            
             "mall-name-1": "Galleria Mall",
             "mall-description-1": "Galleria Mall is considered one of the most prominent malls in Jubail and attracts visitors thanks to the variety of shops that offer international brands in clothing, accessories, cosmetics and electronics, such as H&M, CenterPoint, and others... It also contains many restaurants that offer local and international cuisine such as McDonald's, Manousha Al Reef, Starbucks, and others....",
             "mall-location": "Location: Jubail - Google Maps:",
@@ -40,19 +41,32 @@ function changeLanguage(lang) {
             "mall-Features-2":"Features: It is modern and contains the latest shops, cafes, restaurants, and others.",
             "mall-Services-2":"Services: Gold shops, accessories, abayas, cafes, restaurants, entertainment.",
             "mall-link-2":": Fanateer Mall - Jubail",
-
+            
 
             "mall-name-3": "Alhuwailat Mall",
-            "mall-description-3": "Alhuwailat Mall features various stores.",
-            "mall-location-3": "Location: Jubail - Google Maps: Alhuwailat Mall",
+            "mall-description-3": " Al-Huwailat Mall is a medium-sized mall in Jubail, featuring a variety of stores, including clothing and household items, as well as Hyper Panda and Jarir Bookstore. The mall also houses several cafes and restaurants, such as Burger King and Eamon, offering a variety of options for visitors. ",
+            "mall-Features-3":"Features: It is close to the expressway leading to Dammam.",
+            "mall-Services-3":"Services: Shops, Hyper Panda, Jarir Bookstore, Cafes, Restaurants.",
+            "mall-link-3":"Alhuwailat Mall - Jubail",
+
             "mall-name-4": "Alfaiha Market",
             "mall-description-4": "Alfaiha Market is one of the prominent local markets in Jubail.",
-            "mall-location-4": "Location: Jubail - Google Maps: Alfaiha Market",
-           
+            "mall-Features-4":"",
+            "mall-Services-4":"",
+            "mall-link-4":"Alfaiha Market - Jubail",
+
+            "mall-name-5": "Jubail Bay Mall",
+            "mall-description-5": "",
+            "mall-Features-5":"",
+            "mall-Services-5":"",
+            "mall-link-5":"Jubail Bay Mall - Jubail",
+
+            /*hotels page*/
             "hotels-title": "Best Hotels in Jubail",
             "hotel-name-1": "Park Inn Radisson Jubail",
             "hotel-description-1":"Located near Najd Park and Jubail Corniche, it offers comfortable rooms with Wi-Fi and free parking, and is close to shopping and entertainment centers.",
             "hotel-location": "Location on Google Maps",
+            
             "hotel-name-2": "Coral Jubail Hotel",
             "hotel-description-2": "Coral Jubail Hotel is a great choice for travelers looking for comfort.",
             
@@ -87,30 +101,43 @@ function changeLanguage(lang) {
             "about-title": " عن مدينة الجبيل ",
             "about-text":"تُعدُّ مدينة الجبيل من أقدم المدن الساحلية في المملكة العربية السعودية، حيث يعود تاريخها إلى أكثر من 7,000 عام .كانت تُعرف قديمًا بأنها مركزٌ مهمٌ للصيد والتجارة البحرية، نظرًا لموقعها الاستراتيجي على ساحل الخليج العربي ",
             "about-text1":"في العصور الإسلامية، كانت الجبيل محطة استراحة للتجار والمسافرين بين الموانئ الخليجية، وشهدت تطورًا تدريجيًا حتى العصر الحديث.  في عام 1933، تم اكتشاف بئر ماء قديمة تُعرف باسم عين الجبيل، والتي تُعد من العلامات التاريخية للمدينة",
+           
             "map":"استكشف الجبيل على الخريطة",
+           
             /* mall pageb */
             "shopping-title": "مراكز التسوق في الجبيل",
 
-            "mall-name-1": "غاليريا مول",
-            "mall-description-1": "ُعتبر غاليريا مول من أبرز المولات في الجبيل ويستقطب الزوار بفضل تنوع المحلات التجارية التي تقدم الماركات العالمية في الملابس والإكسسوارات ومستحضرات التجميل والإلكترونيات, مثل محل درعة H&M,CenterPoint, وغيرهم... . كما يحتوي على العديد من المطاعم التي تقدم المأكولات المحلية والعالمية مثل ماكدونالدز و منؤوشة الريف وستاربكس وغيرها....",
-            "mall-location-1": "الموقع على خرائط جوجل",
-            "mall-Features-1":"المميزات: يتميز بموقعه الذي يقع بوسط المدينة واحتواءه على افضل متاجر العطور",
+            "mall-name-1": "غاليريا مول ",
+            "mall-description-1": ">يُعتبر غاليريا مول من أبرز المولات في الجبيل ويستقطب الزوار بفضل تنوع المحلات التجارية التي تقدم الماركات العالمية في الملابس والإكسسوارات ومستحضرات التجميل والإلكترونيات, مثل محل درعة H&M,CenterPoint, وغيرهم... . كما يحتوي على العديد من المطاعم التي تقدم المأكولات المحلية والعالمية مثل ماكدونالدز و منؤوشة الريف وستاربكس وغيرها....",
+            "mall-location": "الموقع على خرائط جوجل ",
+            "mall-Features-1":"المميزات: يتميز بموقعه الذي يقع بوسط المدينة واحتواءه على افضل متاجر العطور ",
             "mall-Services-1":"الخدمات: محلات تجارية، مطاعم، مقاهي، محلات مستحضرات تجميل.",
-            "mall-link-1":": غاليريا مول - الجبيل",
+            "mall-link-1":"غاليريا مول - الجبيل",
 
             "mall-name-2": "الفناتير مول",
             "mall-description-2": "تم تجديد وتطوير الفناتير مول ليصبح وجهة تسوق متميزة في الجبيل. يضم الآن مجموعة واسعة من المتاجر بما في ذلك محلات الذهب والإكسسوارات مثل محل الغامدي للذهب، بالإضافة إلى محلات العبايات. كما يضم العديد من المطاعم والمقاهي التي تقدم خيارات متنوعة للزوار مثل صب واي, كون زون وأماكن ترفيهية للأطفال مثل جامبو لين مما يجعله مكانًا مثاليًا للتسوق والترفيه.",
             "mall-Features-2":"المميزات: يتميز بحداثته واحتوائه على احدث المحلات من المقاهي والمطاعم وغيرها",
-            "mall-Services-2":"الخدمات: محلات ذهب، إكسسوارات، عبايات، مقاهي، مطاعم, ترفية",
-            "mall-link-2":": الفناتير مول - الجبيل",
+            "mall-Services-2":" الخدمات: محلات تجارية، مطاعم، مقاهي، محلات مستحضرات تجميل.",
+            "mall-link-2":" الفناتير مول - الجبيل",
+            
 
             "mall-name-3": "الحويلات مول",
-            "mall-description-3": "الحويلات مول هو مول متنوع يضم العديد من المحلات التجارية المميزة.",
-            "mall-location-3": "الموقع: الجبيل - الموقع على خرائط جوجل: الحويلات مول",
-            "mall-name-4": "سوق الفيحاء",
-            "mall-description-4": "يُعد سوق الفيحاء من أبرز الأسواق الشعبية في الجبيل.",
-            "mall-location-4": "الموقع: الجبيل - الموقع على خرائط جوجل: سوق الفيحاء", 
-           
+            "mall-description-3": "يُعد الحويلات مول من المولات المتوسطة الحجم في الجبيل، ويتميز بوجود محلات متنوعة تشمل ملابس، مستلزمات منزلية، بالإضافة إلى هايبر بنده وجرير. كما يحتوي المول على بعض المقاهي والمطاعم مثل برجر كنج وايمون التي تقدم خيارات متنوعة للزوار.",
+            "mall-Features-3":"المميزات: يتميز بقربة من الخط السريع المؤدي الى الدمام ",
+            "mall-Services-3":" الخدمات: محلات تجارية، هايبر بندة، مكتبة جرير، مقاهي، مطاعم.",
+            "mall-link-3":"الحويلات مول  - الجبيل " ,
+
+            "mall-name-4": "Alfaiha Market",
+            "mall-description-4": "Alfaiha Market is one of the prominent local markets in Jubail.",
+            "mall-Features-4":"",
+            "mall-Services-4":"",
+            "mall-link-4":"Alfaiha Market - Jubail",
+
+            "mall-name-5": "Jubail Bay Mall",
+            "mall-description-5": "",
+            "mall-Features-5":"",
+            "mall-Services-5":"",
+            "mall-link-5":"Jubail Bay Mall - Jubail",
             /*hotels page*/
             "hotels-title": "أفضل الفنادق في الجبيل",
             "hotel-name-1": "بارك إن راديسون الجبيل الصناعية",

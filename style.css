@@ -35,15 +35,16 @@ header h1 {
 }
 
 header img {
-    max-height: 80px; /* Reduce logo size if applicable */
+    max-height: 100px; /* Reduce logo size if applicable */
     max-width: 100%;
 }
 
 .header-icon {
-    width: 200px; /* Adjust icon size */
-    height: auto;
-    margin-left: 1000px;
-    
+    position: absolute; /* Ensures it stays in place */
+    top: 15px; /* Adjust vertical position */
+    right: 20px; /* Adjust horizontal position */
+    width: 160px; /* Resize the logo */
+    height: auto; /* Resize the logo */
     
 }
 header h1 {
@@ -202,6 +203,6 @@ hr {
 #mapid {
     height: 400px;
     width: 100%;
-    border: 5px solid #007BFF; /* Blue border */
+    border: 5px solid #0b0b0b; /* Blue border */
     border-radius: 10px; /* Optional rounded corners */
 }
