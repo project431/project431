@@ -16,16 +16,29 @@ body.dark-mode {
 }
 
 header {
-    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Al_jubail.jpg/800px-Al_jubail.jpg') no-repeat center center fixed;
+    height: 100px; /* Reduce the header height */
+    overflow: hidden; /* Prevents extra content from spilling */
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Al_jubail.jpg/800px-Al_jubail.jpg') no-repeat center center;
     background-size: cover;
-    backdrop-filter: blur(30px); /* Adjust blur intensity */
+    backdrop-filter: blur(10px); /* Reduce blur intensity for better clarity */
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0; /* Reduce padding to save space */
     text-align: center;
-    border-bottom: 1px solid #ccc; /* Adds a border under the header */
-    backdrop-filter: blur(30px); /* Adjust blur intensity */   
+    border-bottom: 1px solid #ccc; /* Keeps the border for separation */
 }
+
+header h1 {
+    font-size: 20px; /* Reduce font size */
+    margin: 0;
+    line-height: 1.2; /* Improve text alignment */
+}
+
+header img {
+    max-height: 80px; /* Reduce logo size if applicable */
+    max-width: 100%;
+}
+
 .header-icon {
     width: 200px; /* Adjust icon size */
     height: auto;
@@ -43,8 +56,8 @@ header .lang-buttons {
 
 .lang-btn {
     margin: 5px;
-    padding: 10px;
-    background-color: #007BFF;
+    padding: 2px;
+    background-color: #c6c7c8;
     color: white;
     border: none;
     cursor: pointer;
