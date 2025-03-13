@@ -29,7 +29,7 @@
         </nav>
 
         <section id="about-jubail">
-            <h2 data-translate="about-webpage-title" > عن هذه الصفحة</h2>
+            <h2 data-translate="about-webpage-title" > عن هذه الصفحة </h2>
             <div class="text-image-container"class="text-image-container">
                 <p data-translate="about-page-text-1"> تم إنشاء هذه الصفحة لتكون دليلك الشامل لكل ما يخص مدينة الجبيل، حيث نقدم معلومات دقيقة حول أفضل الأماكن والخدمات المتاحة في المدينة. ستجد هنا تفاصيل عن مراكز التسوق، الفنادق، المطاعم، المرافق الصحية، المساجد، وأماكن الترفيه، مما يساعدك في استكشاف المدينة بسهولة.
                 </p>
@@ -56,7 +56,24 @@
             <img src="https://lh5.googleusercontent.com/p/AF1QipMKntrpxlfgwzrlQyCjaBNYfuqIo25YSBAvpe9Y=w426-h240-k-no" alt="Jubail Image">
                 
         </div>
+        <hr>
         </section>
+        <section id="map">
+            <h2 data-translate="map">استكشف الجبيل على الخريطة</h2>
+            <div id="mapid" style="height: 500px; width: 500px; padding: 10px; border: 10px;" ></div>
+        
+            <!-- Leaflet JS (Required for OpenStreetMap) -->
+            <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        
+            <script>
+                var map = L.map('mapid').setView([27.0112225, 49.5638696], 12);
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; OpenStreetMap contributors'
+                }).addTo(map);
+            </script>
+        </section>
+        
         
 
     <footer>
