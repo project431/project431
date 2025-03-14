@@ -67,18 +67,62 @@ function changeLanguage(lang) {
 
             /*hotels page*/
             "hotels-title": "Best Hotels in Jubail",
-            "hotel-name-1": "Park Inn Radisson Jubail",
-            "hotel-description-1":"Located near Najd Park and Jubail Corniche, it offers comfortable rooms with Wi-Fi and free parking, and is close to shopping and entertainment centers.",
-            "hotel-location": "Location on Google Maps",
-            
+
+            "hotel-name-1": "Park Inn by Radisson Jubail Industrial",
+            "hotel-price-1": "💰💰💰 (Medium)",
+            "hotel-description-1": "Located near Najd Park and Jubail Corniche, offering comfortable rooms with free Wi-Fi and parking. Close to shopping and entertainment centers.",
+            "hotel-location-1": "Location on Google Maps",
+            "hotel-link-1": "Park Inn by Radisson Jubail Industrial",
+            "hotel-more-1": "For booking and inquiries",
+          
             "hotel-name-2": "Coral Jubail Hotel",
-            "hotel-description-2": "Coral Jubail Hotel is a great choice for travelers looking for comfort.",
-            
+            "hotel-price-2": "💰💰💰 (Medium)",
+            "hotel-description-2": "A modern hotel by the sea, offering a panoramic dining experience with views of the Arabian Gulf. Elegantly furnished rooms with contemporary décor.",
+            "hotel-location-2": "Location on Google Maps",
+            "hotel-link-2": "Coral Jubail Hotel",
+            "hotel-more-2": "For booking and inquiries",
+          
             "hotel-name-3": "Intercontinental Jubail Hotel",
-            "hotel-description-3": "A luxury resort on the beach with beautiful gardens.",
-            
-            "hotel-name-4": "Sheraton Jubail Hotel",
-            "hotel-description-4": "Sheraton Jubail Hotel is an ideal choice for accommodation.",
+            "hotel-price-3": "💰💰💰 (Medium)",
+            "hotel-description-3": "A modern hotel by the sea, offering a panoramic dining experience with views of the Arabian Gulf. Elegantly furnished rooms with contemporary décor.",
+            "hotel-location-3": "Location on Google Maps",
+            "hotel-link-3": "Intercontinental Jubail Hotel",
+            "hotel-more-3": "For booking and inquiries",
+          
+            "hotel-name-4": "Boudl Jubail Hotel",
+            "hotel-price-4": "💰💰💰 (Medium)",
+            "hotel-description-4": "Located on the Arabian Gulf coast in Jubail Industrial City, near major attractions such as beaches, parks, and shopping centers. 6 km from Najd Park and Al Dhafair Park, and 8 km from Al Shurooq Entertainment Park.",
+            "hotel-location-4": "Location on Google Maps",
+            "hotel-link-4": "Boudl Jubail Hotel",
+            "hotel-more-4": "For booking and inquiries",
+          
+            "hotel-name-5": "Holiday Inn & Suites - Jubail",
+            "hotel-price-5": "💰💰💰 (Medium)",
+            "hotel-description-5": "Located just a 5-minute walk from Taibah Beach and about an hour from King Fahd International Airport, offering modern rooms and suites suitable for families and business travelers.",
+            "hotel-location-5": "Location on Google Maps",
+            "hotel-link-5": "Holiday Inn & Suites - Jubail",
+            "hotel-more-5": "For booking and inquiries",
+          
+            "hotel-name-6": "Durrat Jalmouda Hotel",
+            "hotel-price-6": "💰💰💰 (Medium)",
+            "hotel-description-6": "Situated in Jubail, 5.9 km from Al Dafi Park, featuring an outdoor pool, free private parking, a fitness center, and a restaurant.",
+            "hotel-location-6": "Location on Google Maps",
+            "hotel-link-6": "Durrat Jalmouda Hotel",
+            "hotel-more-6": "For booking and inquiries",
+          
+            "hotel-name-7": "Warwick Al Jubail Hotel",
+            "hotel-price-7": "💰💰💰 (Medium)",
+            "hotel-description-7": "Located 4.6 km from Najd Park, this hotel offers a terrace, free private parking, a restaurant, and a bar. A 4-star hotel with business facilities and concierge service, providing free Wi-Fi, a 24-hour front desk, airport transfers, and room service.",
+            "hotel-location-7": "Location on Google Maps",
+            "hotel-link-7": "Warwick Al Jubail Hotel",
+            "hotel-more-7": "For booking and inquiries",
+          
+            "hotel-name-8": "Karan Hotel",
+            "hotel-price-8": "💰💰💰 (Medium)",
+            "hotel-description-8": "This upscale hotel is near the Gulf, surrounded by businesses and restaurants, and is a 14-minute walk from Fanateer Corniche Park. The hotel is 103 km from King Fahd International Airport.",
+            "hotel-location-8": "Location on Google Maps",
+            "hotel-link-8": "Karan Hotel",
+            "hotel-more-8": "For booking and inquiries",
             
              /* place to eat page*/
             "eat-title":"places to eat",
@@ -178,18 +222,65 @@ function changeLanguage(lang) {
             "mall-location-5": "الموقع على خرائط جوجل ",
             /*hotels page*/
             "hotels-title": "أفضل الفنادق في الجبيل",
-            "hotel-name-1": "بارك إن راديسون الجبيل الصناعية",
-            "hotel-description-1": " يقع بالقرب من حديقة نجد وكورنيش الجبيل، ويوفر غرفًا مريحة مع واي فاي وموقف سيارات مجاني، كما أنه قريب من مراكز التسوق والترفيه",
-            "hotel-name-2": "  فندق كورال الجبيل " ,
-            "hotel-description-2": "فندق كورال الجبيل هو خيار رائع للمسافرين الذين يبحثون عن راحة وأجواء هادئة .",
-            
-            "hotel-name-3": "فندق إنتركونتيننتال الجبيل",
-            "hotel-description-3": ": منتجع فاخر على شاطئ البحر يتميز بحدائق خلابة وشاطئ خاص. يوفر غرفًا وأجنحة أنيقة بإطلالات على الخليج العربي",
-            
-            "hotel-name-4": "",
-            "hotel-description-4": "",
+           
+            "hotel-name-1": " بارك إن راديسون الجبيل الصناعية ",
+            "hotel-price-1":"💰💰💰 (متوسط)",
+            "hotel-description-1": " يقع بالقرب من حديقة نجد وكورنيش الجبيل، ويوفر غرفًا مريحة مع واي فاي وموقف سيارات مجاني، كما أنه قريب من مراكز التسوق والترفيه." ,
+            "hotel-location-1": " الموقع على خرائط جوجل",
+            "hotel-link-1":"بارك إن راديسون الجبيل الصناعية ",
+            "hotel-more-1" : "للحجز والاستفسار ",
 
-            "hotel-location": " الموقع على خرائط جوجل",
+            "hotel-name-2": "  فندق كورال الجبيل " ,
+            "hotel-price-2":"💰💰💰 (متوسط)",
+            "hotel-description-2": "فندق حديث يقع بجوار البحر، ويوفر تجربة طعام بانورامية بإطلالات على الخليج العربي. الغرف مؤثثة بأناقة مع ديكور عصري",
+            "hotel-location-2": " الموقع على خرائط جوجل",
+            "hotel-link-2":"فندق كورال الجبيل ",
+            "hotel-more-2" : "للحجز والاستفسار ",
+
+            "hotel-name-3": " فندق إنتركونتيننتال الجبيل ",
+            "hotel-price-3":"💰💰💰 (متوسط)",
+            "hotel-description-3": " فندق حديث يقع بجوار البحر، ويوفر تجربة طعام بانورامية بإطلالات على الخليج العربي. الغرف مؤثثة بأناقة مع ديكور عصري",
+            "hotel-location-3": " الموقع على خرائط جوجل",
+            "hotel-link-3":" فندق إنتركونتيننتال الجبيل ",
+            "hotel-more-3" : "للحجز والاستفسار ",
+
+            "hotel-name-4": " فندق بودل الجبيل ",
+            "hotel-price-4":"💰💰💰 (متوسط)",
+            "hotel-description-4": "يقع فندق بودل الجبيل على ساحل الخليج العربي في مدينة الجبيل الصناعية، بالقرب من المعالم السياحية الرئيسية مثل الشواطئ والحدائق ومراكز التسوق، ويقع الفندق على بعد 6 كم من منتزه نجد وحديقة الظفير، وعلى بعد 8 كم من منتزه الشروق الترفيهي",
+            "hotel-location-4": " الموقع على خرائط جوجل",
+            "hotel-link-4":"فندق بودل الجبيل ",
+            "hotel-more-4" : "للحجز والاستفسار ",
+
+            "hotel-name-5": " هوليداي إن آند سويتس - الجبيل " ,
+            "hotel-price-5":"💰💰💰 (متوسط)",
+            "hotel-description-5": " يقع الفندق على بعد 5 دقائق سيرًا على الأقدام من شاطئ طيبة وحوالي ساعة من مطار الملك فهد الدولي، ويوفر غرفًا وأجنحة حديثة تناسب العائلات ورجال الأعمال",
+            "hotel-location-5": " الموقع على خرائط جوجل",
+            "hotel-link-5":"هوليداي إن آند سويتس - الجبيل ",
+            "hotel-more-5" : "للحجز والاستفسار ",
+
+            "hotel-name-6": "فندق درة جلمودة " ,
+            "hotel-price-6":"💰💰💰 (متوسط)",
+            "hotel-description-6": "يقع مكان إقامة Durrat Jalmouda Hotel في الجبيل، على بعد 5.9 كم من حديقة الدفي، ويتميز بمسبح خارجي ومواقف خاصة للسيارات مجاناً ومركز للياقة البدنية ومطعم",
+            "hotel-location-6": " الموقع على خرائط جوجل",
+            "hotel-link-6":"فندق درة جلمودة ",
+            "hotel-more-6" : "للحجز والاستفسار ",
+
+            "hotel-name-7": " فندق ورويك الجبيل " ,
+            "hotel-price-7":"💰💰💰 (متوسط)",
+            "hotel-description-7": " يقع Warwick Al Jubail Hotel في الجبيل، وعلى بُعد 4.6 كم من منتزه نجد، وهو مكان إقامة يضم تراس ومواقف خاصة للسيارات مجاناً ومطعماً وبار، كما يوفر هذا الفندق المصنف 4 نجوم مركزاً للأعمال وخدمة الكونسيرج، فيما يوفر مكان الإقامة خدمة الواي فاي مجاناً في جميع أنحائه ومكتباً للاستقبال يعمل على مدار الساعة وخدمات نقل المطار وخدمة الغرف.",
+            "hotel-location-7": " الموقع على خرائط جوجل",
+            "hotel-link-7":"فندق ورويك الجبيل ",
+            "hotel-more-7" : "للحجز والاستفسار ",
+
+            "hotel-name-8": " فندق كران " ,
+            "hotel-price-8":"💰💰💰 (متوسط)",
+            "hotel-description-8": "  يقع هذا الفندق الراقي بالقرب من الخليج ووسط الشركات والمطاعم، ويبعُد 14 دقيقة سيرًا على الأقدام عن منطقة  كورنيش الفناتير المكسوة بالعشب. ويبعد الفندق 103 كيلومتر عن مطار الملك فهد الدولي.",
+            "hotel-location-8": " الموقع على خرائط جوجل",
+            "hotel-link-8":"فندق كران ",
+            "hotel-more-8" : "للحجز والاستفسار ",
+            
+            
+  
            /* place to eat*/
             "eat-title":"أماكن لتناول الطعام",
 
