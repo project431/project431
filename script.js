@@ -84,7 +84,37 @@ function changeLanguage(lang) {
             "eat-title":"places to eat",
 
              /* mosques page*/
-           "mosques-title":"mosques",
+"mosques-title": "Mosques",
+    "mosques-name-1": "Al-Farooq Mosque",
+    "mosques-description-1": "Al-Farooq Mosque is considered one of the most prominent and largest mosques in Jubail Industrial City. It features an architectural design that combines classical Islamic styles with modern touches, making it a spiritual and aesthetic landmark in the city. It welcomes a large number of worshippers during daily prayers and religious occasions.",
+    "mosques-size-1": "Size: One of the largest mosques in Jubail Industrial City, accommodating a significant number of worshippers.",
+    "mosques-location-1": "Location on Google Maps",
+    "mosques-link-1": "Al-Farooq Mosque",
+
+    "mosques-name-2": "Dr. Ghazi Al-Qusaibi Mosque",
+    "mosques-description-2": "A modern mosque named in honor of Dr. Ghazi Al-Qusaibi. It features a simple and elegant design that reflects the contemporary beauty of Islamic architecture. The mosque provides a calm and spiritual atmosphere for worshippers and is located near the new SABIC building, making it distinctive in terms of location.",
+    "mosques-size-2": "Size: Medium-sized with a geometric design that comfortably accommodates worshippers.",
+    "mosques-location-2": "Location on Google Maps",
+    "mosques-link-2": "Dr. Ghazi Al-Qusaibi Mosque",
+
+    "mosques-name-3": "Anas Bin Malik Mosque",
+    "mosques-description-3": "Anas Bin Malik Mosque is characterized by its elegance and spirituality, serving as a vibrant center for worship and religious activities in the Al-Huwailat neighborhood. The mosque is carefully designed to combine comfort and simplicity, attracting local residents for prayers.",
+    "mosques-size-3": "Size: Spacious and accommodates a large number of worshippers.",
+    "mosques-location-3": "Location on Google Maps",
+    "mosques-link-3": "Anas Bin Malik Mosque",
+
+    "mosques-name-4": "Taiba Mosque",
+    "mosques-description-4": "Taiba Mosque enjoys a tranquil atmosphere and a simple yet elegant architectural design, providing worshippers with a unique spiritual experience. This mosque is one of the ideal options for residents seeking comfort and peace during their prayers.",
+    "mosques-size-4": "Size: Medium-sized, with a suitable space to meet the needs of worshippers.",
+    "mosques-location-4": "Location on Google Maps",
+    "mosques-link-4": "Taiba Mosque",
+
+    "mosques-name-5": "Al-Reihan Mosque",
+    "mosques-description-5": "Al-Rehan Mosque is known for its attractive design and spacious area, making it a favorite destination for local residents to perform prayers. The mosque is famous for its large capacity during Friday prayers and special occasions, providing a unique spiritual atmosphere.",
+    "mosques-size-5": "Size: Large and accommodates a significant number of worshippers.",
+    "mosques-location-5": "Location on Google Maps",
+    "mosques-link-5": "Al-Reihan Mosque"
+
         },
 
         ar: {
@@ -164,7 +194,37 @@ function changeLanguage(lang) {
             "eat-title":"أماكن لتناول الطعام",
 
             /* mosques page*/
-           "mosques-title":"المساجد",
+            "mosques-title":"المساجد",
+            "mosques-name-1":" جامع الفاروق ",
+            "mosques-description-1":"جامع الفاروق يُعتبر من أبرز وأكبر الجوامع في الجبيل الصناعية. يتميز بتصميم معماري يجمع بين الطراز الإسلامي الكلاسيكي واللمسات الحديثة، مما يجعله معلمًا روحانيًا وجماليًا في المدينة. يستقبل أعدادًا كبيرة من المصلين خلال الأوقات اليومية والمناسبات الدينية.",
+            "mosques-size-1":"الحجم: من أكبر الجوامع في الجبيل الصناعية، ويتسع لعدد كبير من المصلين.",
+            "mosques-location-1":"الموقع على خرائط جوجل",
+            "mosques-link-1":"جامع الفاروق ",
+            
+            "mosques-name-2":" جامع الدكتور غازي القصيبي ",
+            "mosques-description-2":"جامع حديث تم تسميته تكريمًا للدكتور غازي القصيبي. يتميز بتصميم بسيط وأنيق يعكس الجمال العصري للعمارة الإسلامية. الجامع يوفر أجواءً هادئة وروحانية للمصلين، ويقع بالقرب من مبنى سابك الجديد، مما يجعله مميزًا من حيث الموقع.",
+            "mosques-size-2":"•الحجم: متوسط الحجم مع تصميم هندسي يستوعب المصلين بشكل مريح.",
+            "mosques-location-2":"الموقع على خرائط جوجل",
+            "mosques-link-2":"جامع الدكتور غازي القصيبي ",
+ 
+            "mosques-name-3":" جامع أنس بن مالك ",
+            "mosques-description-3":"يتميز جامع أنس بن مالك بأناقته وروحانيته، حيث يُعد مركزًا حيويًا للعبادة والأنشطة الدينية في حي الحويلات. الجامع مصمم بعناية ليجمع بين الراحة والبساطة، مما يجذب سكان الحي للصلاة فيه.",
+            "mosques-size-3":"•الحجم: واسع ويتسع لأعداد كبيرة من المصلين",
+            "mosques-location-3":"الموقع على خرائط جوجل",
+            "mosques-link-3":"جامع أنس بن مالك ",
+ 
+            "mosques-name-4":" جامع طيبة ",
+            "mosques-description-4":"جامع طيبة يتمتع بأجواء هادئة وتصميم معماري بسيط ولكنه أنيق، يوفر للمصلين تجربة روحانية مميزة. يعد هذا الجامع من الخيارات المثالية للسكان الباحثين عن الراحة والسكينة خلال أداء صلواتهم",
+            "mosques-size-4":" •الحجم: متوسط الحجم، مع مساحة مناسبة تلبي احتياجات المصلين.",
+            "mosques-location-4":"الموقع على خرائط جوجل",
+            "mosques-link-4":"جامع طيبة ",
+ 
+            "mosques-name-5":" جامع الريحان ",
+            "mosques-description-5":"جامع الريحان يتميز بتصميمه الجذاب ومساحته الواسعة، مما يجعله وجهة مفضلة لسكان الحي لأداء الصلاة. يشتهر الجامع باستيعابه الكبير خلال صلاة الجمعة والمناسبات، مع توفير أجواء روحانية مميزة.",
+            "mosques-size-5":"•الحجم: كبير ويتسع لعدد كبير من المصلين",
+            "mosques-location-5":"الموقع على خرائط جوجل",
+            "mosques-link-5":" جامع الريحان ",
+ 
 
         }
     };
