@@ -186,7 +186,7 @@ function changeLanguage(lang) {
             "shopping-title": "مراكز التسوق في الجبيل",
 
             "mall-name-1": "غاليريا مول ",
-            "mall-description-1": ">يُعتبر غاليريا مول من أبرز المولات في الجبيل ويستقطب الزوار بفضل تنوع المحلات التجارية التي تقدم الماركات العالمية في الملابس والإكسسوارات ومستحضرات التجميل والإلكترونيات, مثل محل درعة H&M,CenterPoint, وغيرهم... . كما يحتوي على العديد من المطاعم التي تقدم المأكولات المحلية والعالمية مثل ماكدونالدز و منؤوشة الريف وستاربكس وغيرها....",
+            "mall-description-1": "يُعتبر غاليريا مول من أبرز المولات في الجبيل ويستقطب الزوار بفضل تنوع المحلات التجارية التي تقدم الماركات العالمية في الملابس والإكسسوارات ومستحضرات التجميل والإلكترونيات, مثل محل درعة H&M,CenterPoint, وغيرهم... . كما يحتوي على العديد من المطاعم التي تقدم المأكولات المحلية والعالمية مثل ماكدونالدز و منؤوشة الريف وستاربكس وغيرها....",
             "mall-location-1": "الموقع على خرائط جوجل ",
             "mall-Features-1":"المميزات: يتميز بموقعه الذي يقع بوسط المدينة واحتواءه على افضل متاجر العطور ",
             "mall-Services-1":"الخدمات: محلات تجارية، مطاعم، مقاهي، محلات مستحضرات تجميل.",
@@ -337,25 +337,22 @@ changeLanguage('ar');
 
 // Language buttons
 
-document.querySelectorAll('.lang').forEach(item => {
-    item.addEventListener('click', event => {
-        const lang = event.target.getAttribute('data-lang');
-        changeLanguage(lang);
+const langButtons = document.querySelectorAll(".lang-button");
+langButtons.forEach(button => {
+    button.addEventListener("click", function() {
+        const newLang = this.dataset.lang;
+        changeLanguage(newLang);
     });
-}
-);
-
+});
 const toggleButton = document.getElementById("darkModeToggle");
 const body = document.body;
-const toggleImage = document.getElementById("toggleImage");
 
 toggleButton.addEventListener("click", function() {
     body.classList.toggle("dark-mode");
     if (body.classList.contains("dark-mode")) {
-        toggleImage.src = "dark_mode_icon.png";  // Change the image to dark mode icon
+        toggleButton.textContent = "🌞";  // Change button text to sun (light mode)
     } else {
-        toggleImage.src = "light_mode_icon.png";  // Change back to light mode icon
+        toggleButton.textContent = "🌙";  // Change button text to moon (dark mode)
     }
 });
-
 
