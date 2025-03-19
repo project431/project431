@@ -8,6 +8,7 @@ function toggleLanguage() {
 function changeLanguage(lang) {
     const translations = {
         en: {
+            "dark-mode":"🌙",
             /*button */
             "home-button": "home",
             "mall-button": "mall",
@@ -158,7 +159,6 @@ function changeLanguage(lang) {
     "mosques-size-5": "Size: Large and accommodates a significant number of worshippers.",
     "mosques-location-5": "Location on Google Maps",
     "mosques-link-5": "Al-Reihan Mosque"
-
         },
 
         ar: {
@@ -315,8 +315,7 @@ function changeLanguage(lang) {
             "mosques-size-5":"•الحجم: كبير ويتسع لعدد كبير من المصلين",
             "mosques-location-5":"الموقع على خرائط جوجل",
             "mosques-link-5":" جامع الريحان ",
- 
-
+            "dark-mode":"🌙",
         }
     };
 
@@ -335,4 +334,28 @@ function changeLanguage(lang) {
 
 // Default language setup
 changeLanguage('ar');
+
+// Language buttons
+
+document.querySelectorAll('.lang').forEach(item => {
+    item.addEventListener('click', event => {
+        const lang = event.target.getAttribute('data-lang');
+        changeLanguage(lang);
+    });
+}
+);
+
+const toggleButton = document.getElementById("darkModeToggle");
+const body = document.body;
+const toggleImage = document.getElementById("toggleImage");
+
+toggleButton.addEventListener("click", function() {
+    body.classList.toggle("dark-mode");
+    if (body.classList.contains("dark-mode")) {
+        toggleImage.src = "dark_mode_icon.png";  // Change the image to dark mode icon
+    } else {
+        toggleImage.src = "light_mode_icon.png";  // Change back to light mode icon
+    }
+});
+
 

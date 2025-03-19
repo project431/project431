@@ -2,7 +2,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background-color: #f4f7fa;
+    background-color: #e5e8eb;
     color: #333;
     margin: 0;
     padding: 0;
@@ -11,8 +11,8 @@ body {
 }
 
 body.dark-mode {
-    background-color: #181818;
-    color: #e4e4e4;
+    background-color: #859098;
+    color: #ffffff;
 }
 
 /* Header */
@@ -39,18 +39,13 @@ header h1 {
 }
 
 header img {
-    max-height: 100px; /* Smaller logo */
-    margin-bottom: 10px;
-}
-
-
-.header-icon {
-    position: absolute;
+    max-height: 120px; /* Smaller logo */
+    position : absolute;
     top: 10px;
     right: 10px; /* Adjusted icon position */
-    width: 40px;
-    height: auto;
+    width: 130px;
 }
+
 
 /* Navbar */
 nav {
@@ -312,7 +307,18 @@ hr {
     }
 }
 
-
+button {
+    background: #e3e3e3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 1px 1px;
+    font-size: 15px;
+    border-radius: 2px;
+    position: fixed;
+    top: 50px;
+    right: 9px;
+}
 
 
 
