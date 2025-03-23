@@ -102,3 +102,267 @@
     
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jubail Knowledge Quiz</title>
+  <style>
+    /* Add some basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      text-align: center;
+      padding: 50px;
+    }
+    .quiz-container {
+      max-width: 600px;
+      margin: auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .question {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    .options {
+      list-style-type: none;
+      padding: 0;
+    }
+    .options li {
+      background-color: #f0f0f0;
+      margin: 5px 0;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .options li:hover {
+      background-color: #ddd;
+    }
+    .btn {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #45a049;
+    }
+    .language-btn {
+      font-size: 20px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1 id="quiz-title">Jubail Knowledge Quiz</h1>
+    <div id="question-container">
+      <p id="question" class="question"></p>
+      <ul id="options" class="options"></ul>
+    </div>
+    <button id="next-btn" class="btn">Next</button>
+    <button id="reset-btn" class="btn">Restart</button>
+    <button id="theme-btn" class="btn">🌙</button>
+    <button id="lang-btn" class="language-btn">🔄</button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      class Quiz {
+        constructor(questions) {
+          this.questions = questions;
+          this.totalQuestions = questions.length;
+          this.currentQuestionIndex = 0;
+          this.score = 0;
+          this.isArabic = true;  // Tracks the current language
+        }
+
+        init() {
+          this.loadQuestion();
+          document.getElementById('next-btn').addEventListener('click', () => {
+            this.nextQuestion();
+          });
+          document.getElementById('reset-btn').addEventListener('click', () => {
+            this.resetQuiz();
+          });
+          document.getElementById('theme-btn').addEventListener('click', () => {
+            this.toggleTheme();
+          });
+          document.getElementById('lang-btn').addEventListener('click', () => {
+            this.toggleLanguage();
+          });
+        }
+
+        loadQuestion() {
+          const currentQuestion = this.questions[this.currentQuestionIndex];
+          const lang = this.isArabic ? 'ar' : 'en';
+
+          document.getElementById('question').innerText = this.isArabic ? currentQuestion.question_ar : currentQuestion.question_en;
+          document.getElementById('options').innerHTML = '';
+          currentQuestion.options.forEach((option, index) => {
+            const li = document.createElement('li');
+            li.innerText = this.isArabic ? option.ar : option.en;
+            li.addEventListener('click', () => this.checkAnswer(index));
+            document.getElementById('options').appendChild(li);
+          });
+        }
+
+        checkAnswer(selectedIndex) {
+          const currentQuestion = this.questions[this.currentQuestionIndex];
+          if (selectedIndex === currentQuestion.correctIndex) {
+            this.score++;
+          }
+          this.nextQuestion();
+        }
+
+        nextQuestion() {
+          if (this.currentQuestionIndex < this.totalQuestions - 1) {
+            this.currentQuestionIndex++;
+            this.loadQuestion();
+          } else {
+            this.showResults();
+          }
+        }
+
+        resetQuiz() {
+          this.score = 0;
+          this.currentQuestionIndex = 0;
+          this.loadQuestion();
+        }
+
+        showResults() {
+          alert(`Quiz Over! You scored ${this.score} out of ${this.totalQuestions}`);
+        }
+
+        toggleTheme() {
+          document.body.classList.toggle('dark-theme');
+        }
+
+        toggleLanguage() {
+          this.isArabic = !this.isArabic;  // Toggle language flag
+          const lang = this.isArabic ? 'ar' : 'en';
+
+          // Change text for the quiz based on the selected language
+          document.getElementById('quiz-title').innerText = lang === 'ar' ? 'اختبار معلومات عن مدينة الجبيل' : 'Jubail Knowledge Quiz';
+          document.getElementById('reset-btn').innerText = lang === 'ar' ? '🔄 إعادة' : '🔄 Restart';
+          document.getElementById('theme-btn').innerText = lang === 'ar' ? '🌙' : '🌙';
+
+          this.updateQuestionsLanguage();
+        }
+
+        updateQuestionsLanguage() {
+          this.questions.forEach((question, index) => {
+            question.question = this.isArabic ? question.question_ar : question.question_en;
+            question.options = question.options.map((option, i) => this.isArabic ? option.ar : option.en);
+          });
+
+          // Reload the current question to reflect the language change
+          this.loadQuestion();
+        }
+      }
+
+      const questions = [
+        {
+          question_ar: 'في أي عام تم تأسيس مدينة الجبيل الصناعية رسميًا؟',
+          question_en: 'In which year was Jubail Industrial City officially founded?',
+          options: [
+            { ar: '1975', en: '1975' },
+            { ar: '1983', en: '1983' },
+            { ar: '1990', en: '1990' },
+            { ar: '2005', en: '2005' }
+          ],
+          correctIndex: 0
+        },
+        {
+          question_ar: 'ما هي الجهة المسؤولة عن تطوير مدينة الجبيل الصناعية؟',
+          question_en: 'Which organization is responsible for developing Jubail Industrial City?',
+          options: [
+            { ar: 'أرامكو السعودية', en: 'Saudi Aramco' },
+            { ar: 'سابك', en: 'SABIC' },
+            { ar: 'الهيئة الملكية للجبيل وينبع', en: 'Royal Commission for Jubail and Yanbu' },
+            { ar: 'وزارة التجارة', en: 'Ministry of Commerce' }
+          ],
+          correctIndex: 2
+        },
+        {
+          question_ar: 'ما هو البحر الذي يحد مدينة الجبيل؟',
+          question_en: 'Which sea borders Jubail?',
+          options: [
+            { ar: 'البحر الأحمر', en: 'Red Sea' },
+            { ar: 'الخليج العربي', en: 'Arabian Gulf' },
+            { ar: 'المحيط الهندي', en: 'Indian Ocean' },
+            { ar: 'البحر الأبيض المتوسط', en: 'Mediterranean Sea' }
+          ],
+          correctIndex: 1
+        },
+        {
+          question_ar: 'ما هي أكبر شركة صناعية في مدينة الجبيل؟',
+          question_en: 'What is the largest industrial company in Jubail?',
+          options: [
+            { ar: 'سابك', en: 'SABIC' },
+            { ar: 'أرامكو', en: 'Aramco' },
+            { ar: 'شركة الجبيل للبتروكيماويات', en: 'Jubail Petrochemical Company' },
+            { ar: 'شركة المراعي', en: 'Almarai' }
+          ],
+          correctIndex: 0
+        },
+        {
+          question_ar: 'ما هي أكبر مدينة صناعية في المملكة؟',
+          question_en: 'What is the largest industrial city in Saudi Arabia?',
+          options: [
+            { ar: 'مدينة الرياض', en: 'Riyadh' },
+            { ar: 'الدمام', en: 'Dammam' },
+            { ar: 'الجبيل', en: 'Jubail' },
+            { ar: 'جدة', en: 'Jeddah' }
+          ],
+          correctIndex: 2
+        },
+        {
+          question_ar: 'ما هي المدينة التي تحتفظ فيها الهيئة الملكية بمتنزهاتها و حدائقها؟',
+          question_en: 'Which city does the Royal Commission manage its parks and gardens?',
+          options: [
+            { ar: 'الرياض', en: 'Riyadh' },
+            { ar: 'الجبيل', en: 'Jubail' },
+            { ar: 'الدمام', en: 'Dammam' },
+            { ar: 'أبها', en: 'Abha' }
+          ],
+          correctIndex: 1
+        },
+        {
+          question_ar: 'ما هي المسافة من الجبيل إلى الرياض؟',
+          question_en: 'What is the distance from Jubail to Riyadh?',
+          options: [
+            { ar: '200 كم', en: '200 km' },
+            { ar: '300 كم', en: '300 km' },
+            { ar: '400 كم', en: '400 km' },
+            { ar: '500 كم', en: '500 km' }
+          ],
+          correctIndex: 2
+        },
+        {
+          question_ar: 'كم عدد سكان مدينة الجبيل؟',
+          question_en: 'What is the population of Jubail?',
+          options: [
+            { ar: 'حوالي 100,000', en: 'Around 100,000' },
+            { ar: 'حوالي 200,000', en: 'Around 200,000' },
+            { ar: 'حوالي 400,000', en: 'Around 400,000' },
+            { ar: 'حوالي 600,000', en: 'Around 600,000' }
+          ],
+          correctIndex: 1
+        }
+      ];
+
+      // Initialize the quiz
+      const quiz = new Quiz(questions);
+      quiz.init();
+    });
+  </script>
+</body>
+</html>
