@@ -272,7 +272,21 @@ hr {
     font-size: 24px;
     color: #777;
 }
+.link-box a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
 
+.link-box a:hover {
+    background: #e0e0e0;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     header h1 {
