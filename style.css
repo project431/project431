@@ -339,7 +339,61 @@ button {
     top: 50px;
     right: 9px;
 }
+.weather-card {
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    max-width: 180px;
+    font-size: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: auto;
+    margin-top: 10px;
+}
+/* Hover Effect */
+.weather-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
+.weather-card h2 {
+    font-size: 15px;
+    margin-bottom: 4px;
+    color: #007bff;
+}
+
+.temp {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #333;
+}
+
+.desc {
+    font-size: 12px;
+    color: #555;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: rotate(15deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .weather-card {
+        width: 100%;
+        max-width: 200px;
+    }
+}
 
 
 

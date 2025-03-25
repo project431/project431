@@ -32,7 +32,9 @@
                 <li><a data-translate="entertainment-button" href="entertainment.html"> الترفيه</a></li>
             </ul>
         </nav>
+        
         <hr>
+        
         <section id="about-jubail">
             <h2 data-translate="about-webpage-title" > عن هذه الصفحة </h2>
             <div class="text-image-container"class="text-image-container">
@@ -85,11 +87,17 @@
             <div id="jubail-time" class="time-box"></div>
             <p id="jubail-date"></p>
         </div>
-
+             
         <div class="contact-container">
             <div class="box-container link-box">
                 
                 <a href="quiz-game.html"> اختبار معلومات عن الجبيل </a>
+            </div>
+            <div class="weather-card">
+                <h2>الطقس في الجبيل</h2>
+                <img id="icon" class="icon" src="https://via.placeholder.com/100" alt="Weather Icon">
+                <p class="temp"><span id="temp">--</span>°C</p>
+                <p id="desc" class="desc loading">Fetching weather...</p>
             </div>
             </div>
         </div>    
@@ -112,6 +120,53 @@
     
         setInterval(updateTime, 1000);
         updateTime();
+
+        
+    </script>
+    <script>
+        async function getWeather() {
+            try {
+                let response = await fetch("https://wttr.in/Jubail?format=%C+%t+%w");
+                let weatherText = await response.text();
+                let [condition, temperature, wind] = weatherText.split(" ");
+    
+                document.getElementById("temp").textContent = temperature;
+                document.getElementById("desc").textContent = `${condition}, Wind: ${wind}`;
+    
+                let weatherIcons = {
+                    "Clear": "https://cdn-icons-png.flaticon.com/512/869/869869.png",
+                    "Sunny": "https://cdn-icons-png.flaticon.com/512/869/869869.png",
+                    "Cloudy": "https://cdn-icons-png.flaticon.com/512/1163/1163624.png",
+                    "Partly": "https://cdn-icons-png.flaticon.com/512/1163/1163636.png",
+                    "Rain": "https://cdn-icons-png.flaticon.com/512/1163/1163657.png",
+                    "Showers": "https://cdn-icons-png.flaticon.com/512/1163/1163657.png",
+                    "Thunderstorm": "https://cdn-icons-png.flaticon.com/512/1163/1163661.png",
+                    "Snow": "https://cdn-icons-png.flaticon.com/512/1163/1163673.png",
+                    "Fog": "https://cdn-icons-png.flaticon.com/512/1163/1163685.png"
+                };
+    
+                let weatherKey = Object.keys(weatherIcons).find(key => condition.includes(key));
+                document.getElementById("icon").src = weatherIcons[weatherKey] || "https://cdn-icons-png.flaticon.com/512/869/869869.png";
+    
+            } catch (error) {
+                document.getElementById("desc").textContent = "Weather unavailable.";
+                document.getElementById("temp").textContent = "--";
+                document.getElementById("icon").src = "https://via.placeholder.com/100";
+                console.error("Error fetching weather:", error);
+            }
+        }
+    
+        function updateTime() {
+            let now = new Date();
+            let timeString = now.toLocaleTimeString("en-US", { hour12: false });
+            let dateString = now.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+    
+            document.getElementById("jubail-time").textContent = timeString;
+            document.getElementById("jubail-date").textContent = dateString;
+        }
+    
+        getWeather();
+        setInterval(updateTime, 1000);
     </script>
     
 </body>
