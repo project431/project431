@@ -8,7 +8,7 @@ function toggleLanguage() {
 function changeLanguage(lang) {
     const translations = {
         en: {
-            "dark-mode":"🌙",
+            
             /*button */
             "home-button": "home",
             "mall-button": "mall",
@@ -21,7 +21,7 @@ function changeLanguage(lang) {
             "about-webpage-title": "About this webpage",
             "about-page-text-1":"This page was created to be your comprehensive guide to everything related to Jubail, providing detailed information about the best places and services available in the city. Here, you'll find details about shopping malls, hotels, restaurants, healthcare facilities, mosques, and entertainment venues, helping you explore the city with ease.",
             "about-page-text-2":"Our goal is to provide a reliable resource that reflects the beauty and sophistication of Jubail, whether you're a resident or a visitor looking for a unique experience. We're constantly updating information to ensure you receive the most accurate details and the best recommendations.",
-            "main-title": "Welcome to Jubail City",
+            "main-title": "guide to everything related to Jubail",
             "about-title": "About Jubail",
             "about-text1":"During the Islamic era, Jubail served as a resting stop for traders and travelers moving between Gulf ports, gradually developing over the centuries. In 1933, an ancient water well known as Ain Jubail was discovered, marking an important historical site in the city.",
             "about-text": "Jubail, located on the Arabian Gulf coast in Saudi Arabia’s Eastern Province, is one of the oldest human settlements in the region, dating back over 7,000 years. In 1975, the city underwent a major transformation with the establishment of Jubail Industrial City, now the world’s largest industrial city, home to numerous petrochemical plants and oil refineries. This development has made Jubail a symbol of industry in Saudi Arabia and a key contributor to the nation’s economic diversification.",
@@ -175,7 +175,7 @@ function changeLanguage(lang) {
             "about-webpage-title": " عن هذه الصفحة ",
             "about-page-text-1":"تم إنشاء هذه الصفحة لتكون دليلك الشامل لكل ما يخص مدينة الجبيل، حيث نقدم معلومات دقيقة حول أفضل الأماكن والخدمات المتاحة في المدينة. ستجد هنا تفاصيل عن مراكز التسوق، الفنادق، المطاعم، المرافق الصحية، المساجد، وأماكن الترفيه، مما يساعدك في استكشاف المدينة بسهولة.",
             "about-page-text-2":"هدفنا هو توفير مصدر موثوق يعكس جمال وتطور الجبيل، سواء كنت من سكانها أو زائرًا يبحث عن تجربة مميزة. نحرص على تحديث المعلومات باستمرار لضمان حصولك على أدق التفاصيل وأفضل التوصيات.",
-            "main-title": "مرحبًا بكم في مدينة الجبيل",
+            "main-title": " دليلك الشامل لكل ما يخص مدينة الجبيل",
             "about-title": " عن مدينة الجبيل ",
             "about-text":"تُعدُّ مدينة الجبيل من أقدم المدن الساحلية في المملكة العربية السعودية، حيث يعود تاريخها إلى أكثر من 7,000 عام .كانت تُعرف قديمًا بأنها مركزٌ مهمٌ للصيد والتجارة البحرية، نظرًا لموقعها الاستراتيجي على ساحل الخليج العربي ",
             "about-text1":"في العصور الإسلامية، كانت الجبيل محطة استراحة للتجار والمسافرين بين الموانئ الخليجية، وشهدت تطورًا تدريجيًا حتى العصر الحديث.  في عام 1933، تم اكتشاف بئر ماء قديمة تُعرف باسم عين الجبيل، والتي تُعد من العلامات التاريخية للمدينة",
@@ -315,7 +315,7 @@ function changeLanguage(lang) {
             "mosques-size-5":"•الحجم: كبير ويتسع لعدد كبير من المصلين",
             "mosques-location-5":"الموقع على خرائط جوجل",
             "mosques-link-5":" جامع الريحان ",
-            "dark-mode":"🌙",
+            
         }
     };
 
@@ -356,3 +356,52 @@ toggleButton.addEventListener("click", function() {
     }
 });
 
+async function getWeather() {
+    try {
+        let response = await fetch("https://wttr.in/Jubail?format=%C+%t+%w");
+        let weatherText = await response.text();
+
+        // Use regex to split more smartly
+        // Example string: "Partly cloudy +32°C ↑5 km/h"
+        let match = weatherText.match(/^(.+?)\s+([+-]?\d+°[CF])\s+(.*)$/);
+        if (!match) throw new Error("Unexpected weather format");
+
+        let [, condition, temperature, wind] = match;
+
+        document.getElementById("temp").textContent = temperature;
+        document.getElementById("desc").textContent = `${condition}, Wind: ${wind}`;
+
+        let weatherIcons = {
+            "Clear": "https://cdn-icons-png.flaticon.com/512/869/869869.png",
+            "Sunny": "https://cdn-icons-png.flaticon.com/512/869/869869.png",
+            "Cloudy": "https://cdn-icons-png.flaticon.com/512/1163/1163624.png",
+            "Partly": "https://cdn-icons-png.flaticon.com/512/1163/1163636.png",
+            "Rain": "https://cdn-icons-png.flaticon.com/512/1163/1163657.png",
+            "Showers": "https://cdn-icons-png.flaticon.com/512/1163/1163657.png",
+            "Thunderstorm": "https://cdn-icons-png.flaticon.com/512/1163/1163661.png",
+            "Snow": "https://cdn-icons-png.flaticon.com/512/1163/1163673.png",
+            "Fog": "https://cdn-icons-png.flaticon.com/512/1163/1163685.png"
+        };
+
+        let weatherKey = Object.keys(weatherIcons).find(key => condition.includes(key));
+        document.getElementById("icon").src = weatherIcons[weatherKey] || "https://cdn-icons-png.flaticon.com/512/869/869869.png";
+
+    } catch (error) {
+        document.getElementById("desc").textContent = "Weather unavailable.";
+        document.getElementById("temp").textContent = "--";
+        document.getElementById("icon").src = "https://via.placeholder.com/100";
+        console.error("Error fetching weather:", error);
+    }
+}
+
+function updateTime() {
+    let now = new Date();
+    let timeString = now.toLocaleTimeString("en-US", { hour12: false });
+    let dateString = now.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+
+    document.getElementById("jubail-time").textContent = timeString;
+    document.getElementById("jubail-date").textContent = dateString;
+}
+
+getWeather();
+setInterval(updateTime, 1000);
