@@ -1,7 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background-color: #e5e8eb;
+    background-color: #ecf3fd ; 
     color: #333;
     margin: 0;
     padding: 0;
@@ -10,12 +10,13 @@ body {
 }
 
 body.dark-mode {
-    background-color: #859098;
+    background-color: #9babc5;
     color: #303030;
 }
 
 /* Header */
 header {
+    background: url('https://media-hosting.imagekit.io/68972a5dba834a22/WhatsApp%20Image%202025-04-13%20at%2021.54.57_a03ae49c.jpg?Expires=1839178556&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=J7Z9Rs9sbnQui6fhlJNFGJRnhe~dxl95Ozg1GTrgu5byOQyLKippN~DapC~hucwoRWnDc8LIALhoHU2JB7Mdigw7onCqebeSU-V53fnOPayHuDuMzBNhmmahWSZGC~lK1gmQoVNmM6sFzsZuKI-SWKvYmODqhQRk2pkCZBl96hNk6OFQYQfJpNjfjz~oPKoEPIEdXBggCm97EqA8Kk3v~y7rc~XLn7~sr~j4GtU~gl4MV~nMkaO5lnKzeCVZKOFDOP2jIGy8xdkoG0SVvtJea3dYrj5LYTNuhaNpH3Opzzu4jiI9IvinopslwgKarGCaED6azPQMCqkezIbKD0qQsg__') no-repeat center center/cover;
     height: 80px;
     backdrop-filter: blur(8px);
     background-color: #333;
@@ -69,7 +70,7 @@ nav ul li {
 nav ul li a {
     color: #333;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 600;
     padding: 14px 28px;
     border-radius: 5px;
@@ -189,21 +190,30 @@ footer p {
 
 /* Text and Image Container */
 .text-image-container {
-    display: flex;
+    display:flex ;
+    
+    max-width: 1200px;
+    flex-direction:row;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 45px;
-    gap: 40px;
+    justify-content:flex-start;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    margin-top: 35px;
+    gap: 20px;
 }
 
 .text-image-container p {
     width: 65%;
     font-size: 19px;
     color: #555;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
 }
 
 .text-image-container img {
-    width: 35%;
+    background: #fff;
+    width: 30%;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
@@ -417,3 +427,4 @@ button {
 .weather-card .icon img:active {
     transform: scale(0.9);
 }
+

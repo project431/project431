@@ -10,13 +10,13 @@ function changeLanguage(lang) {
         en: {
             
             /*button */
-            "home-button": "home",
-            "mall-button": "mall",
-            "hotels-button": "hotels",
-            "eat-button": "where to eat",
-            "healthcare-button":"healthcare",
+            "home-button": "Home",
+            "mall-button": "Shopping",
+            "hotels-button": "Accommodation",
+            "eat-button": "Restaurants",
+            "healthcare-button":"Healthcare",
             "mosques-button" :"Mosques",
-            "entertainment-button":"entertainment",
+            "entertainment-button":"Entertainment",
             /* home page */
             "about-webpage-title": "About this webpage",
             "about-page-text-1":"This page was created to be your comprehensive guide to everything related to Jubail, providing detailed information about the best places and services available in the city. Here, you'll find details about shopping malls, hotels, restaurants, healthcare facilities, mosques, and entertainment venues, helping you explore the city with ease.",
@@ -165,8 +165,8 @@ function changeLanguage(lang) {
            /*button */
             "home-button": "الرئيسية",
             "mall-button": "مراكز التسوق",
-            "hotels-button": "الفنادق",
-            "eat-button": " الاكل",
+            "hotels-button": "الإقامة",
+            "eat-button": " المطاعم",
             "healthcare-button":"الصحة",
             "mosques-button" :"المساجد",
             "entertainment-button":" الترفيه",
