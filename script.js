@@ -18,6 +18,8 @@ function changeLanguage(lang) {
             "mosques-button" :"Mosques",
             "entertainment-button":"Entertainment",
             /* home page */
+            "time":"time in Jubail",
+            "weather":"weather in Jubail",
             "about-webpage-title": "About this webpage",
             "about-page-text-1":"This page was created to be your comprehensive guide to everything related to Jubail, providing detailed information about the best places and services available in the city. Here, you'll find details about shopping malls, hotels, restaurants, healthcare facilities, mosques, and entertainment venues, helping you explore the city with ease.",
             "about-page-text-2":"Our goal is to provide a reliable resource that reflects the beauty and sophistication of Jubail, whether you're a resident or a visitor looking for a unique experience. We're constantly updating information to ensure you receive the most accurate details and the best recommendations.",
@@ -158,7 +160,80 @@ function changeLanguage(lang) {
     "mosques-description-5": "Al-Rehan Mosque is known for its attractive design and spacious area, making it a favorite destination for local residents to perform prayers. The mosque is famous for its large capacity during Friday prayers and special occasions, providing a unique spiritual atmosphere.",
     "mosques-size-5": "Size: Large and accommodates a significant number of worshippers.",
     "mosques-location-5": "Location on Google Maps",
-    "mosques-link-5": "Al-Reihan Mosque"
+        "mosques-link-5": "Al-Reihan Mosque",
+      /* Health pageb */
+       
+           /* Health page */
+        "healthcare-title":" Healthcare",
+         "healthcare-name-1": "Royal Commission Hospital in Jubail",
+         "healthcare-type-1": "Government Hospital",
+         "healthcare-description-1": "This hospital is operated by the Royal Commission for Jubail and Yanbu, providing healthcare services to residents and workers in Jubail Industrial City.",
+         "healthcare-location-1": "View on Google Maps",
+         "healthcare-link-1": "Royal Commission Hospital in Jubail",
+         "healthcare-more-1": "More",
+
+         "healthcare-name-2": "Al Mouwasat Hospital",
+         "healthcare-type-2": "Private Hospital",
+         "healthcare-description-2": "Part of the Al Mouwasat Hospitals Group, this advanced private hospital offers various departments including Emergency, Surgery, ICU, Obstetrics & Gynecology, and specialized clinics such as Dermatology, Ophthalmology, and ENT.",
+         "healthcare-location-2": "View on Google Maps",
+         "healthcare-link-2": "Al Mouwasat Hospital",
+         "healthcare-more-2": "More",
+
+         "healthcare-name-3": "Al Mana General Hospital",
+         "healthcare-type-3": "Private Hospital",
+         "healthcare-description-3": "Offers a variety of medical services including outpatient clinics, surgery, cosmetics, pediatrics, internal medicine, dermatology, and support departments like lab and radiology. Known for excellent customer service and modern equipment.",
+         "healthcare-location-3": "View on Google Maps",
+         "healthcare-link-3": "Al Mana General ",  
+         "healthcare-more-3": "More",
+
+         "healthcare-name-4": "Al-Lu'lu'a Medical Complex",
+         "healthcare-type-4": "Private Hospital",
+         "healthcare-description-4": "Al-Lu'lu'a Medical Complex, also known as Al-Lu'lu'a Dispensary, is a private healthcare facility located in the heart of Jubail Industrial City, in Al-Firdaws district on Al-Nakheel Road. Established in 1995 as part of Al Waleed Investment Group, it has since become a trusted name in the area.",
+         "healthcare-location-4": "View on Google Maps",
+         "healthcare-link-4": "Al-Lu'lu'a Medical Complex",
+         "healthcare-more-4": "More",
+
+         "healthcare-name-5": "RAM Dental",
+         "healthcare-type-5": "Private Dental Hospital",
+         "healthcare-description-5": "RAM Dental is a chain of clinics specialized in providing modern dental care services in Saudi Arabia. Known for delivering high-quality treatment using the latest technologies and medical equipment, with a team of experienced specialist dentists.",
+         "healthcare-location-5": "View on Google Maps",
+         "healthcare-link-5": "RAM Dental",
+         "healthcare-more-5": "More",
+          
+         
+        /* GYM page */
+        
+        "gym": "Best Gyms in Jubail",
+           
+        "gym-name-1": "Snap Fitness",
+        "gym-price-1": "💰💰💰 (Medium)",
+        "gym-gender-1": "Al-Huwailat Branch - Men's Section",
+        "gym-description-1": "Snap Fitness is a global chain of fitness clubs offering high-quality fitness services. The Jubail Industrial City branch, located in Al-Huwailat, provides a comprehensive sports environment to meet members' needs 24/7.",
+        "gym-services-1": "Modern Equipment: Cardio and strength training machines, as well as functional training equipment. Diverse Training Programs: Group classes and personal training sessions to meet various member needs.",
+        "gym-location-1": "Location on Google Maps",
+        "gym-link-1": "Snap Fitness",
+        "gym-more-1": "More",
+
+        "gym-name-2": "Fitness Time",
+        "gym-price-2": "💰💰💰 (High)",
+        "gym-gender-2": "Jalmouda - Men's and Women's Sections",
+        "gym-description-2": "One of the leading fitness center chains in Saudi Arabia, offering comprehensive sports facilities to meet the needs of various age groups and fitness levels. Its branches in Jubail Industrial City, located in Jalmouda and Al-Firdaws, are equipped with the latest equipment and provide an ideal environment for achieving fitness goals.",
+        "gym-services-2": "Fully Equipped Fitness Halls: Featuring the latest sports equipment for strength and fitness training.",
+        "gym-location-2": "Location on Google Maps",
+        "gym-link-2": "Fitness Time",
+        "gym-more-2": "More",
+
+        "gym-name-3": "iN2 Fitness Club",
+        "gym-price-3": "💰💰💰 (Medium)",
+        "gym-gender-3": "Women's Section",
+        "gym-description-3": "A leading fitness club in Saudi Arabia, offering integrated sports facilities and an exceptional fitness experience. The club aims to meet members' needs by providing high-quality services and facilities equipped with the latest technologies. The club features a stunning sea view.",
+        "gym-services-3": "• World-class designed spaces: To meet all fitness needs of members. • Latest cardio and strength training technologies: Ensuring an effective training experience. • Dedicated studios for group fitness classes: Providing a motivational and enjoyable environment.",
+        "gym-location-3": "Location on Google Maps",
+        "gym-link-3": "iN2 Fitness Club",
+        "gym-more-3": "More",
+         
+         
+         
         },
 
         ar: {
@@ -170,8 +245,10 @@ function changeLanguage(lang) {
             "healthcare-button":"الصحة",
             "mosques-button" :"المساجد",
             "entertainment-button":" الترفيه",
-           
+            
             /* home page */
+            "time":"الوقت في الجبيل",
+            "weather":"الطقس في الجبيل",
             "about-webpage-title": " عن هذه الصفحة ",
             "about-page-text-1":"تم إنشاء هذه الصفحة لتكون دليلك الشامل لكل ما يخص مدينة الجبيل، حيث نقدم معلومات دقيقة حول أفضل الأماكن والخدمات المتاحة في المدينة. ستجد هنا تفاصيل عن مراكز التسوق، الفنادق، المطاعم، المرافق الصحية، المساجد، وأماكن الترفيه، مما يساعدك في استكشاف المدينة بسهولة.",
             "about-page-text-2":"هدفنا هو توفير مصدر موثوق يعكس جمال وتطور الجبيل، سواء كنت من سكانها أو زائرًا يبحث عن تجربة مميزة. نحرص على تحديث المعلومات باستمرار لضمان حصولك على أدق التفاصيل وأفضل التوصيات.",
@@ -315,6 +392,74 @@ function changeLanguage(lang) {
             "mosques-size-5":"•الحجم: كبير ويتسع لعدد كبير من المصلين",
             "mosques-location-5":"الموقع على خرائط جوجل",
             "mosques-link-5":" جامع الريحان ",
+            
+            /* Health pageb */
+            "healthcare-title":" الصحة",
+            "healthcare-name-1": "  مستشفى الهيئة الملكية بالجبيل ", 
+            "healthcare-type-1": "مستشفى حكومي",
+            "healthcare-description-1": "يُدار هذا المستشفى من قبل الهيئة الملكية للجبيل وينبع، ويوفر الخدمات الصحية للمقيمين والعاملين في مدينة الجبيل الصناعية",
+            "healthcare-location-1": "الموقع على خرائط جوجل",
+            "healthcare-link-1": "مستشفى الهيئة الملكية بالجبيل ",
+            "healthcare-more-1":"المزيد",
+
+            "healthcare-name-2": "مستشفى المواساة ", 
+            "healthcare-type-": "مستشفى خاص",
+            "healthcare-description-2": " جزء من مجموعة مستشفيات المواساة، وهو مستشفى خاص متطور يحتوي على أقسام متعددة مثل الطوارئ، الجراحة، العناية المركزة، النساء والولادة، وعيادات تخصصية مثل الجلدية والعيون والأنف والأذن والحنجرة.",
+            "healthcare-location-2": "  الموقع على خرائط جوجل " ,
+            "healthcare-link-2": "مستشفى المواساة ",
+            "healthcare-more-2":"المزيد",
+
+            "healthcare-name-3": "مستشفى المانع العام ", 
+            "healthcare-type-3": "مستشفى خاص",
+            "healthcare-description-3": "قدم خدمات طبية متنوعة تشمل العيادات الخارجية، الجراحة، التجميل، الأطفال، الباطنية، الجلدية، وأقسام دعم مثل المختبر والأشعة. يتميّز بخدمة عملاء ممتازة وأجهزة حديثة.",
+            "healthcare-location-3": "الموقع على خرائط جوجل ",
+            "healthcare-link-3": "مستشفى المانع العام ",
+            "healthcare-more-3":"المزيد",
+
+            "healthcare-name-4": " مجمع اللؤلؤ الطبي", 
+            "healthcare-type-4": "مستشفى خاص",
+            "healthcare-description-4": "مجمع اللؤلؤ الطبي، المعروف أيضًا باسم مستوصف اللؤلؤ، هو منشأة طبية خاصة تقع في قلب مدينة الجبيل الصناعية، حي الفردوس، على طريق النخيل. تأسس المجمع عام 1995 كجزء من مجموعة الوليد للاستثمار، وأصبح منذ ذلك الحين رمزًا للثقة في المنطقة.",
+            "healthcare-location-4": "الموقع على خرائط جوجل ",
+            "healthcare-link-4": "مجمع اللؤلؤ الطبي",
+            "healthcare-more-4":"المزيد",
+
+            "healthcare-name-5": "رام لطب الاسنان", 
+            "healthcare-type-5": "مستشفى خاص طب الأسنان",
+            "healthcare-description-5": "رام لطب الأسنان (RAM Dental) هي سلسلة عيادات متخصصة في تقديم خدمات طب الأسنان الحديثة في المملكة العربية السعودية. تشتهر بتقديم رعاية طبية عالية الجودة باستخدام أحدث التقنيات والأجهزة الطبية، مع طاقم من الأطباء المتخصصين ذوي الخبرة.",
+            "healthcare-location-5": "الموقع على خرائط جوجل",
+            "healthcare-link-5": "رام لطب الاسنان",
+            "healthcare-more-5":"المزيد",
+            
+            /* GYM page */
+            "gym-title":"أفضل صالات رياضية في الجبيل",
+
+            "gym-name-1": "سناب فتنس",
+            "gym-price-1":"💰💰💰 (متوسط)",
+            "gym-gender-1":"فرع الحويلات - قسم رجالي",
+            "gym-description-1":"يُعد سناب فتنس من سلاسل الأندية الرياضية العالمية التي تقدم خدمات لياقة بدنية عالية الجودة. يقع فرع الجبيل الصناعية في حي الحويلات، ويوفر بيئة رياضية متكاملة تلبي احتياجات الأعضاء على مدار الساعة." ,
+            "gym-serveis-1":"معدات حديثة: توفير أجهزة تمارين القلب والقوة، بالإضافة إلى معدات التدريب الوظيفي. برامج تدريبية متنوعة: تقديم حصص جماعية وتدريبات شخصية لتلبية احتياجات الأعضاء المختلفة.",
+            "gym-location-1":"الموقع على خرائط جوجل",
+            "gym-link-1":"سناب فتنس",
+            "gym-more-1":"المزيد",
+            
+            "gym-name-2": "وقت اللياقة  ",
+            "gym-price-2":"💰💰💰 (مرتفع)",
+            "gym gender-2" :"جلمودة- قسم رجالي ونسائي" ,
+            "gym-description-2":"من أبرز سلاسل المراكز الرياضية في المملكة العربية السعودية، حيث يقدم مرافق رياضية متكاملة تلبي احتياجات مختلف الفئات العمرية والمستويات الرياضية. فروعه في الجبيل الصناعية، الواقعه في حي جلمودة، الفردوس مُجهَّزة بأحدث المعدات وتوفر بيئة مثالية لتحقيق أهداف اللياقة البدنية",
+            "gym-serveis-2":"صالات لياقة بدنية مجهزة بالكامل: تحتوي على أحدث الأجهزة الرياضية لتدريبات القوة واللياقة.",
+            "gym-location-2":"الموقع على خرائط جوجل",
+            "gym-link-2":"وقت اللياقة ",
+            "gym-more-2":"المزيد",
+
+            "gym-name-3": " نادي iN2 فتنس",
+            "gym-price-3":"💰💰💰 (متوسط)",
+            "gym gender-3" :"قسم نسائي" ,
+            "gym-description-3":" الرائدة في المملكة العربية السعودية، حيث يقدم مرافق رياضية متكاملة وتجربة لياقة بدنية متميزة. يهدف النادي إلى تلبية احتياجات الأعضاء من خلال تقديم خدمات عالية الجودة ومرافق مجهزة بأحدث التقنيات. يتميز النادي بإطلالة خلابة على البحر",
+            "gym-serveis-3":"• مساحات مصممة على مستوى عالمي: لتلبية جميع احتياجات اللياقة البدنية للأعضاء. • أحدث تقنيات أجهزة الكارديو وتمارين القوة: لضمان تجربة تدريبية فعّالة. • استوديوهات مخصصة لتمارين اللياقة البدنية الجماعية: لتوفير بيئة تحفيزية وممتعة.",
+            "gym-location-3":"الموقع على خرائط جوجل",
+            "gym-link-3":"نادي iN2 فتنس",
+            "gym-more-":"المزيد",
+
             
         }
     };
