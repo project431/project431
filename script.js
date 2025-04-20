@@ -23,7 +23,7 @@ function changeLanguage(lang) {
             "about-webpage-title": "About this webpage",
             "about-page-text-1":"This page was created to be your comprehensive guide to everything related to Jubail, providing detailed information about the best places and services available in the city. Here, you'll find details about shopping malls, hotels, restaurants, healthcare facilities, mosques, and entertainment venues, helping you explore the city with ease.",
             "about-page-text-2":"Our goal is to provide a reliable resource that reflects the beauty and sophistication of Jubail, whether you're a resident or a visitor looking for a unique experience. We're constantly updating information to ensure you receive the most accurate details and the best recommendations.",
-            "main-title": "guide to everything related to Jubail",
+            "main-title": "Your guide to everything related to Jubail Industrial City",
             "about-title": "About Jubail",
             "about-text1":"During the Islamic era, Jubail served as a resting stop for traders and travelers moving between Gulf ports, gradually developing over the centuries. In 1933, an ancient water well known as Ain Jubail was discovered, marking an important historical site in the city.",
             "about-text": "Jubail, located on the Arabian Gulf coast in Saudi Arabia’s Eastern Province, is one of the oldest human settlements in the region, dating back over 7,000 years. In 1975, the city underwent a major transformation with the establishment of Jubail Industrial City, now the world’s largest industrial city, home to numerous petrochemical plants and oil refineries. This development has made Jubail a symbol of industry in Saudi Arabia and a key contributor to the nation’s economic diversification.",
@@ -128,7 +128,57 @@ function changeLanguage(lang) {
             "hotel-more-8": "For booking and inquiries",
             
              /* place to eat page*/
-            "eat-title":"places to eat",
+            "eat-place-title": "Dining Places",
+
+"eat-place-name-1": "Steak House",
+"eat-place-price-1": "$$$$ (High)",
+"eat-place-description-1": "A restaurant offering a premium experience for meat lovers, renowned for serving authentic American-style grilled steaks. The restaurant combines high quality, rich flavors, and elegant service, making it a favorite destination for grilled food enthusiasts.",
+"eat-place-type-1": "American restaurant specializing in grilled steaks",
+"eat-place-location-1": "Location on Google Maps",
+"eat-place-link-1": "Steak House",
+
+"eat-place-name-2": "Al Tayeh",
+"eat-place-price-2": "$$$$ (High)",
+"eat-place-description-2": "Al Tayeh is a Saudi restaurant that offers a variety of traditional and international dishes. It is known for its high-quality food and upscale service. The modern atmosphere blends luxury with authenticity, making it ideal for families and individuals seeking a premium dining experience.",
+"eat-place-type-2": "Restaurant serving Saudi, Arabic, and international cuisine",
+"eat-place-location-2": "Location on Google Maps",
+"eat-place-link-2": "Al Tayeh",
+
+"eat-place-name-3": "Pranzo",
+"eat-place-price-3": "$$$$ (High)",
+"eat-place-description-3": "Pranzo is a restaurant that serves Italian cuisine in a modern style, known for high-quality ingredients and a classic European touch with a contemporary twist. 'Pranzo' means lunch in Italian, reflecting the restaurant’s focus on a refined Italian dining experience.",
+"eat-place-type-3": "Specialized Italian restaurant",
+"eat-place-location-3": "Location on Google Maps",
+"eat-place-link-3": "Pranzo",
+
+"eat-place-name-4": "Fuddruckers",
+"eat-place-price-4": "$$$ (Moderate)",
+"eat-place-description-4": "Fuddruckers is a popular American restaurant specializing in burgers, known for using fresh beef prepared daily in-house. Customers can customize their orders. Founded in the U.S., it later expanded to several countries, including Saudi Arabia, where it enjoys wide popularity.",
+"eat-place-type-4": "American restaurant",
+"eat-place-location-4": "Location on Google Maps",
+"eat-place-link-4": "Fuddruckers",
+
+"eat-place-name-5": "Dar Al Karam Restaurant",
+"eat-place-price-5": "$$$$ (High)",
+"eat-place-description-5": "A fine Lebanese restaurant serving traditional dishes with authentic flavors and a modern twist. It stands out for its elegant seating and rich menu that caters to diverse tastes.",
+"eat-place-type-5": "Upscale Lebanese restaurant",
+"eat-place-location-5": "Location on Google Maps",
+"eat-place-link-5": "Dar Al Karam Restaurant",
+
+"eat-place-name-6": "Grillo",
+"eat-place-price-6": "$$$ (Moderate)",
+"eat-place-description-6": "Grillo Fanateer is one of the top grill restaurants in Jubail Industrial City, located in the Fanateer district. Established in 1995, it’s known for a wide range of grilled dishes and shawarma, as well as Arabic, Egyptian, and tasty pastry options.",
+"eat-place-type-6": "Grill and Shawarma Restaurant",
+"eat-place-location-6": "Location on Google Maps",
+"eat-place-link-6": "Grillo",
+
+"eat-place-name-7": "F&B Burger",
+"eat-place-price-7": "$$$ (Moderate)",
+"eat-place-description-7": "F&B Burger is a Saudi burger chain specializing in freshly made burgers with a variety of meats, sauces, and special toppings. Founded in 2018 in Al-Ahsa, it has expanded to 8 branches in the Eastern Province and plans further expansion across the Kingdom.",
+"eat-place-type-7": "Specialized Burger Restaurant",
+"eat-place-location-7": "Location on Google Maps",
+"eat-place-link-7": "F&B Burger",
+
 
              /* mosques page*/
 "mosques-title": "Mosques",
@@ -215,7 +265,7 @@ function changeLanguage(lang) {
         "gym-more-1": "More",
 
         "gym-name-2": "Fitness Time",
-        "gym-price-2": "💰💰💰 (High)",
+        "gym-price-2": "💰💰💰💰 (High)",
         "gym-gender-2": "Jalmouda - Men's and Women's Sections",
         "gym-description-2": "One of the leading fitness center chains in Saudi Arabia, offering comprehensive sports facilities to meet the needs of various age groups and fitness levels. Its branches in Jubail Industrial City, located in Jalmouda and Al-Firdaws, are equipped with the latest equipment and provide an ideal environment for achieving fitness goals.",
         "gym-services-2": "Fully Equipped Fitness Halls: Featuring the latest sports equipment for strength and fitness training.",
@@ -232,7 +282,50 @@ function changeLanguage(lang) {
         "gym-link-3": "iN2 Fitness Club",
         "gym-more-3": "More",
          
-         
+         "place-title": "Entertainment Places",
+
+         /* entertainment page */
+"place-name-1": "Fanateer Corniche",
+"place-description-1": "Fanateer Corniche is a wonderful tourist destination offering stunning sea views, making it a perfect spot for relaxation and walking.",
+"place-Features-1": "Features: Beautiful sea view, long walkway, kids’ play areas, nearby restaurants and cafés, comfortable seating, shaded areas, seasonal events.",
+"place-location-1": "Location on Google Maps",
+"place-link-1": "Fanateer Corniche",
+
+"place-name-3": "Dareen Corniche",
+"place-description-3": "Located near the Dareen residential district, this spot is calm and family-friendly, known for its simplicity and cleanliness. Ideal for short visits or afternoon picnics.",
+"place-Features-3": "Features: Sea-view seating areas, small walkway, family and kid-friendly, grassy areas, peaceful atmosphere.",
+"place-location-3": "Location on Google Maps",
+"place-link-3": "Dareen Corniche",
+
+"place-name-2": "Palm Corniche",
+"place-description-2": "A quiet and elegant corniche lined with palm trees, stretching along the shore. Perfect for fitness lovers, walkers, or those seeking a serene seaside retreat.",
+"place-Features-2": "Features: Peaceful vibes, stylish walkway, shaded seating, natural views, ideal for families and relaxation.",
+"place-location-2": "Location on Google Maps",
+"place-link-2": "Palm Corniche",
+
+"place-name-4": "Al-Tilal Park",
+"place-description-4": "Tilal Park in Jubail is known for its pleasant ambiance, refreshing breezes, and lush greenery overlooking a sea beach — making it a perfect everyday destination.",
+"place-Features-4": "Features: Sea view, green spaces, walking track, kids’ play areas, cozy seating, great for sunset photos and family gatherings.",
+"place-location-4": "Location on Google Maps",
+"place-link-4": " Al-Tilal Park ",
+
+"place-name-6": "Water Canal Park",
+"place-description-6": "A modern park featuring water canals and small bridges, blended with greenery and water elements to create a unique atmosphere unlike other parks.",
+"place-Features-6": "Features: Water canals, charming bridges, relaxing seating, family-friendly, modern design, ideal for walking and unwinding.",
+"place-location-6": "Location on Google Maps",
+"place-link-6": "Water Canal Park",
+
+"place-name-5": "Al-Deffi Park",
+"place-description-5": "One of the most beautiful and well-known parks in Jubail Industrial City, Al-Deffi is rich in greenery, resembling a small forest in the city. Great for families and nature lovers.",
+"place-Features-5": "Features: Dense trees, walking paths, barbecue areas, kids’ playgrounds, shaded seating, peaceful atmosphere and scenic nature.",
+"place-location-5": "Location on Google Maps",
+"place-link-5": "Al-Deffi Park",
+
+"place-name-7": "Najd Park",
+"place-description-7": "A spacious park combining green landscapes and entertainment facilities, popular for hosting seasonal events. Very suitable for families and young people.",
+"place-Features-7": "Features: Central fountain, comfortable seating, seasonal events, suitable for youth and families, clean grassy areas.",
+"place-location-7": "Location on Google Maps",
+"place-link-7": "Najd Park",
          
         },
 
@@ -252,7 +345,7 @@ function changeLanguage(lang) {
             "about-webpage-title": " عن هذه الصفحة ",
             "about-page-text-1":"تم إنشاء هذه الصفحة لتكون دليلك الشامل لكل ما يخص مدينة الجبيل، حيث نقدم معلومات دقيقة حول أفضل الأماكن والخدمات المتاحة في المدينة. ستجد هنا تفاصيل عن مراكز التسوق، الفنادق، المطاعم، المرافق الصحية، المساجد، وأماكن الترفيه، مما يساعدك في استكشاف المدينة بسهولة.",
             "about-page-text-2":"هدفنا هو توفير مصدر موثوق يعكس جمال وتطور الجبيل، سواء كنت من سكانها أو زائرًا يبحث عن تجربة مميزة. نحرص على تحديث المعلومات باستمرار لضمان حصولك على أدق التفاصيل وأفضل التوصيات.",
-            "main-title": " دليلك الشامل لكل ما يخص مدينة الجبيل",
+            "main-title": " دليلك الشامل لكل ما يخص مدينة الجبيل الصناعية ",
             "about-title": " عن مدينة الجبيل ",
             "about-text":"تُعدُّ مدينة الجبيل من أقدم المدن الساحلية في المملكة العربية السعودية، حيث يعود تاريخها إلى أكثر من 7,000 عام .كانت تُعرف قديمًا بأنها مركزٌ مهمٌ للصيد والتجارة البحرية، نظرًا لموقعها الاستراتيجي على ساحل الخليج العربي ",
             "about-text1":"في العصور الإسلامية، كانت الجبيل محطة استراحة للتجار والمسافرين بين الموانئ الخليجية، وشهدت تطورًا تدريجيًا حتى العصر الحديث.  في عام 1933، تم اكتشاف بئر ماء قديمة تُعرف باسم عين الجبيل، والتي تُعد من العلامات التاريخية للمدينة",
@@ -359,7 +452,57 @@ function changeLanguage(lang) {
             
   
            /* place to eat*/
-            "eat-title":"أماكن لتناول الطعام",
+            "eat-place-title":"أماكن لتناول الطعام",
+            
+            "eat-place-name-1":"ستيك هاوس",
+            "eat-place-price-1":"$$$$ (مرتفع)",
+            "eat-place-description-1":"هو مطعم يقدم تجربة مميزة لعشاق اللحوم، ويشتهر بتقديم شرائح الستيك المشوية على الطريقة الأمريكية الأصلية. تأسس المطعم ليجمع بين الجودة العالية، والنكهات الغنية، والخدمة الراقية، مما جعله وجهة مفضلة لمحبي المأكولات المشوية.",
+            "eat-place-type-1":"مطعم أمريكي متخصص في تقديم شرائح اللحم المشوية",
+            "eat-place-location-1":"الموقع على خرائط جوجل",
+            "eat-place-link-1":"ستيك هاوس",
+
+            
+            "eat-place-name-2":"الطاية",
+            "eat-place-price-2":"$$$$ (مرتفع)",
+            "eat-place-description-2":"الطاية هو مطعم سعودي يقدم تشكيلة متنوعة من الأطباق الشرقية والعالمية، ويُعرف بجودة الطعام والخدمة الراقية. يتميز بجو عصري يجمع بين الفخامة والأصالة، ويستهدف العائلات والأفراد الباحثين عن تجربة طعام مميزة.",
+            "eat-place-type-2":"مطعم يقدم مأكولات سعودية وعربية وعالمية",
+            "eat-place-location-2":"الموقع على خرائط جوجل",
+            "eat-place-link-2":"الطاية",
+
+            "eat-place-name-3":"برانزو",
+            "eat-place-price-3":"$$$$ (مرتفع)",
+            "eat-place-description-3":"رانزو (Pranzo) هو مطعم يقدم مأكولات إيطالية بطريقة عصرية، ويُعرف بجودة المكونات وطابع الأكل الأوروبي الكلاسيكي مع لمسات عصرية. الاسم Pranzo يعني غداء باللغة الإيطالية، وهو يعكس تركيز المطعم على تجربة طعام راقية مستوحاة من المطبخ الإيطالي",
+            "eat-place-type-3":"مطعم إيطالي متخصص",
+            "eat-place-location-3":"الموقع على خرائط جوجل",
+            "eat-place-link-3":"برانزو",
+
+            "eat-place-name-4":"فدركرز",
+            "eat-place-price-4":"$$$ (متوسط)",
+            "eat-place-description-4":"فدركرز هو مطعم أمريكي شهير متخصص في البرغر، يتميز بتقديم برغر لحم طازج يُحضّر يوميًا داخل المطعم، مع إمكانية تخصيص الطلب حسب رغبة الزبون. تأسس في أمريكا وانتشر لاحقًا في عدة دول منها السعودية، حيث يحظى بشعبية كبيرة.",
+            "eat-place-type-4":"مطعم أمريكي",
+            "eat-place-location-4":"الموقع على خرائط جوجل",
+            "eat-place-link-4":"فدركرز",
+
+            "eat-place-name-5":"مطعم دار الكرم",
+            "eat-place-price-5":"$$$$ (مرتفع)",
+            "eat-place-description-5":"هو مطعم لبناني شرقي يقدم أطباقاً تقليدية بنكهات أصلية وبأسلوب عصري، يتميز بجلساته الراقية وقائمة طعام غنية تلبي مختلف الأذواق.",
+            "eat-place-type-5":"مطعم لبناني راقٍ",
+            "eat-place-location-5":"الموقع على خرائط جوجل",
+            "eat-place-link-5":"مطعم دار الكرم",
+
+            "eat-place-name-6":"جريللو",
+            "eat-place-price-6":"$$$ (متوسط)",
+            "eat-place-description-6":"مطعم مشوي جريللو – Grillo Fanateer هو أحد أبرز مطاعم المشويات في مدينة الجبيل الصناعية، وتحديدًا في حي الفناتير. تأسس المطعم عام 1995، ويشتهر بتقديم مجموعة متنوعة من الأطباق المشوية والشاورما، بالإضافة إلى أطباق عربية ومصرية ومعجنات لذيذة",
+            "eat-place-type-6":"مطعم مشويات وشاورما​",
+            "eat-place-location-6":"الموقع على خرائط جوجل",
+            "eat-place-link-6":"جريللو",
+            
+            "eat-place-name-7":"اف آند بي برجر",
+            "eat-place-price-7":"$$$ (متوسط)",
+            "eat-place-description-7":"مطعم اف آند بي برجر (F&B Burger) هو سلسلة مطاعم سعودية متخصصة في تقديم البرجر باستخدام لحوم طازجة ومتنوعة، مع مجموعة من الصلصات والإضافات المميزة. تأسس المطعم عام 2018 في الأحساء، وتمكن من التوسع ليشمل 8 فروع في المنطقة الشرقية، مع خطط للتوسع في أنحاء المملكة",
+            "eat-place-type-7":"مطعم برجر متخصص​",
+            "eat-place-location-7":"الموقع على خرائط جوجل",
+            "eat-place-link-7":"اف آند بي برجر",
 
             /* mosques page*/
             "mosques-title":"المساجد",
@@ -459,8 +602,50 @@ function changeLanguage(lang) {
             "gym-location-3":"الموقع على خرائط جوجل",
             "gym-link-3":"نادي iN2 فتنس",
             "gym-more-":"المزيد",
-
+            /* entertainment page */
+            "place-title":"أماكن ترفيهية  ",
             
+            "place-name-1":" كورنيش الفناتير ",
+            "place-description-1":"كورنيش الفناتير هو وجهة سياحية رائعة تقدم إطلالات خلابة على البحر، مما يجعله مكانًا مثاليًا للاسترخاء والتنزه.",
+            "place-Features-1":"لمميزات: إطلالة بحرية خلابة، ممشى طويل، مناطق ألعاب للأطفال، مطاعم وكافيهات قريبة، جلسات مريحة، مظلات، فعاليات موسمية.",
+            "place-location-1":"الموقع على خرائط جوجل",
+            "place-link-1":"كورنيش الفناتير ",
+            
+            "place-name-3":" كورنيش دارين ",
+            "place-description-3":"يقع قرب حي دارين السكني، وهو من الأماكن الهادئة ذات الطابع العائلي، ويمتاز ببساطته ونظافته، ويُعد مثاليًا للزيارات القصيرة أو نزهات العصر.",
+            "place-Features-3":"المميزات: جلسات تطل على البحر، ممشى صغير، مناسب للعائلات والأطفال، مناطق عشبية، بيئة هادئة.",
+            "place-location-3":"الموقع على خرائط جوجل",
+            "place-link-3":" كورنيش دارين ",
+
+            "place-name-2":" كورنيش النخيل ",
+            "place-description-2":" كورنيش هادئ وراقي، محاط بأشجار النخيل، ويمتد بمحاذاة الشاطئ على مسافة مناسبة لمحبي الرياضة والمشي أو الاسترخاء بجانب البحر.",
+            "place-Features-2":" المميزات:أجواء هادئة، ممشى أنيق، جلسات مظللة، مناظر طبيعية، مثالي للعوائل ومحبي المشي والاستجمام.",
+            "place-location-2":"الموقع على خرائط جوجل",
+            "place-link-2":" كورنيش النخيل ",
+
+            "place-name-4":" منتزه التلال ",
+            "place-description-4":" متنزه تلال دارين في الجبيل يمتاز بأجوائه اللطيفة ونسمات هوائه المنعشة  وطبيعته الخلابة المكسوة بالمسطحات الخضراء الواسعة المطلة على شاطئ بحري، مما يجعله مقصدًا يوميًّا مثاليًّا.",
+            "place-Features-4":"المميزات:   إطلالة بحرية، مساحات خضراء، ممشى، ألعاب أطفال، جلسات جميلة، مناسب لتصوير الغروب والأجواء العائلية.",
+            "place-location-4":"الموقع على خرائط جوجل",
+            "place-link-4":"منتزه التلال",
+
+            "place-name-6":" متنزه القناة المائية للترفيه ",
+            "place-description-6":" منتزه عصري يتميّز بوجود قنوات مائية وجسور صغيرة، مع مزيج بين المساحات الخضراء والمياه، مما يخلق جوًا مختلفًا عن باقي المنتزهات.",
+            "place-Features-6":"المميزات: قنوات مائية، جسور جميلة، جلسات رايقة، بيئة عائلية، تصميم عصري، مكان مثالي للتمشية والاسترخاء",
+            "place-location-6":"الموقع على خرائط جوجل",
+            "place-link-6":"متنزه القناة المائية للترفيه",
+
+            "place-name-5":"  منتزه الدفي ",
+            "place-description-5":" عد من أجمل وأشهر المنتزهات في الجبيل الصناعية، ويتميّز بطبيعته الخضراء الكثيفة وكأنه غابة صغيرة داخل المدينة. مناسب للعائلات ومحبي الطبيعة والهدوء.",
+            "place-Features-5":"المميزات: أشجار كثيفة، ممرات مشي، مناطق شواء، ألعاب أطفال، جلسات مظللة، جو هادئ وطبيعة خلابة.",
+            "place-location-5":"الموقع على خرائط جوجل",
+            "place-link-5":" منتزه الدفي",
+            
+            "place-name-7":" منتزه نجد ",
+            "place-description-7":" منتزه واسع يجمع بين المسطحات الخضراء والمرافق الترفيهية، ويُعرف بإقامة فعالياته الموسمية. مناسب جدًا للعائلات والشباب.",
+            "place-Features-7":" المميزات: نافورة مركزية، جلسات مريحة، فعاليات موسمية، مناسب للشباب والعوائل، مسطحات خضراء نظيفة.",
+            "place-location-7":"الموقع على خرائط جوجل",
+            "place-link-7":"منتزه نجد",
         }
     };
 
