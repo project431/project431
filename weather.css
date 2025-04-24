@@ -2,7 +2,7 @@
   .container-1 {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 66px;
     padding: 20px;
     flex-wrap: wrap;
   }
@@ -23,10 +23,11 @@
   .time-card-1 {
     background: linear-gradient(135deg, #36d1dc, #5b86e5);
     width: 180px;
+    height: 200px;
   }
 
   .weather-card-1 {
-    background: linear-gradient(135deg, #f7971e, #ffd200);
+    background: linear-gradient(135deg, #8accef, #c9d4d5);
     width: 260px;
   }
 
