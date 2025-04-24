@@ -18,6 +18,7 @@ function changeLanguage(lang) {
             "mosques-button" :"Mosques",
             "entertainment-button":"Entertainment",
             /* home page */
+            
             "time":"time in Jubail",
             "weather":"weather in Jubail",
             "about-webpage-title": "About this webpage",

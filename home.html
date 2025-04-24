@@ -6,6 +6,8 @@
     <title> دليلك الشامل لكل ما يخص مدينة الجبيل</title>
     
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="weather.css">
+    
     
 </head>
 <body>
@@ -34,21 +36,29 @@
             </ul>
         </nav>
         <hr>
-        <section>
-            <div class="time-weather-container">
-        <div class="time-container">
-            <h2 data-translate="time"> الوقت الحالي في الجبيل</h2>
-            <div id="jubail-time" class="time-box"></div>
-            <p id="jubail-date"></p>
-        </div>
-        <div class="weather-card">
-            <h2 data-translate="weather">الطقس في الجبيل</h2>
-            <img id="icon" class="icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon">
-            <p class="temp"><span id="temp">32</span></p>
-            <p id="desc" class="desc">مشمس</p>
-        </div>
+        <div class="container-1">
+            <!-- بطاقة الوقت -->
+            <div class="card-1 time-card-1">
+              <h2 data-translate="time">🕒 الوقت</h2>
+              <div class="time-1" id="time">--:--</div>
+              <div class="date-1" id="date">-- -- ----</div>
             </div>
-        </div>    
+        
+            <!-- بطاقة الطقس -->
+            <div class="card-1 weather-card-1">
+              <h2 data-translate="weather">☀️ طقس الجبيل</h2>
+              <div class="icon-1"><img id="icon" src="" alt="أيقونة الطقس"></div>
+              <div class="temp-1" id="temp">--°C</div>
+              <div class="weather-details-1">
+                <div id="range">--°C / --°C</div>
+                <div id="humidity">رطوبة: --%</div>
+                <div id="wind">الريح: -- m/s</div>
+              </div>
+            </div>
+          </div>
+        
+          
+  </div>
     </section>
         
         <hr>
@@ -110,67 +120,32 @@
     </footer>
 
     <script src="script.js"></script>
-  
-    
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const tempEl = document.getElementById("temp");
-            const descEl = document.getElementById("desc");
-            const iconEl = document.getElementById("icon");
-        
-            // Arabic loading animation
-            let loadingInterval;
-            const startLoadingAnimation = () => {
-                let dots = 0;
-                loadingInterval = setInterval(() => {
-                    dots = (dots + 1) % 4;
-                    descEl.textContent = "جارٍ جلب حالة الطقس" + ".".repeat(dots);
-                }, 400);
-            };
-        
-            const stopLoadingAnimation = () => clearInterval(loadingInterval);
-        
-            // Sample mock data
-            const getMockWeather = () => {
-                const weatherSamples = [
-                    { temp: 32, description: "مشمس", icon: "01d" },
-                    { temp: 27, description: "غائم جزئيًا", icon: "02d" },
-                    { temp: 23, description: "غائم كليًا", icon: "03d" },
-                    { temp: 20, description: "ممطر", icon: "10d" },
-                    { temp: 17, description: "ضبابي", icon: "50d" },
-                    { temp: 35, description: "مشمس جدًا", icon: "01d" }
-                ];
-                return weatherSamples[Math.floor(Math.random() * weatherSamples.length)];
-            };
-        
-            const updateWeatherUI = (weather) => {
-                tempEl.textContent = weather.temp;
-                descEl.textContent = weather.description;
-                iconEl.src = `https://openweathermap.org/img/wn/${weather.icon}@2x.png`;
-                iconEl.alt = weather.description;
-        
-                // Graceful fallback if icon fails to load
-                iconEl.onerror = () => {
-                    iconEl.src = "https://via.placeholder.com/100?text=No+Icon";
-                };
-            };
-        
-            // Main flow
-            const loadMockWeather = () => {
-                startLoadingAnimation();
-                setTimeout(() => {
-                    stopLoadingAnimation();
-                    const mockWeather = getMockWeather();
-                    updateWeatherUI(mockWeather);
-                }, 1500);
-            };
-        
-            loadMockWeather();
-        });
-        </script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-translate/1.0.0/jquery.translate.min.js"></script>        
-        
+    <script >
+        // تحديث الوقت
+function updateTime() {
+    const now = new Date();
+    document.getElementById("time").textContent = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+    document.getElementById("date").textContent = now.toLocaleDateString('en-US', { day: '2-digit', month: 'long', year: 'numeric' });
+  }
+  setInterval(updateTime, 1000);
+  updateTime();
+
+  // جلب الطقس
+  const apiKey = "6874cd65a72b9d9f505cc416f3fffa77";
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Jubail&appid=${apiKey}&units=metric&lang=ar`;
+
+  fetch(apiUrl)
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("temp").textContent = `${Math.round(data.main.temp)}°C`;
+      document.getElementById("range").textContent = `${Math.round(data.main.temp_min)}°C / ${Math.round(data.main.temp_max)}°C`;
+      document.getElementById("humidity").textContent = `رطوبة: ${data.main.humidity}%`;
+      document.getElementById("wind").textContent = `الريح: ${data.wind.speed.toFixed(2)} m/s`;
+      document.getElementById("icon").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    })
+    .catch(() => {
+      document.getElementById("temp").textContent = "تعذر التحميل";
+    });
+    </script>     
 </body>
 </html>
