@@ -27,7 +27,7 @@ function changeLanguage(lang) {
             "main-title": "Your guide to everything related to Jubail Industrial City",
             "about-title": "About Jubail",
             "about-text1":"During the Islamic era, Jubail served as a resting stop for traders and travelers moving between Gulf ports, gradually developing over the centuries. In 1933, an ancient water well known as Ain Jubail was discovered, marking an important historical site in the city.",
-            "about-text": "Jubail, located on the Arabian Gulf coast in Saudi Arabia’s Eastern Province, is one of the oldest human settlements in the region, dating back over 7,000 years. In 1975, the city underwent a major transformation with the establishment of Jubail Industrial City, now the world’s largest industrial city, home to numerous petrochemical plants and oil refineries. This development has made Jubail a symbol of industry in Saudi Arabia and a key contributor to the nation’s economic diversification.",
+            "about-text": "Jubail, located on the Arabian Gulf coast in Saudi Arabia’s Eastern Province, is one of the oldest human settlements in the region, dating back over 7,000 years. In 1975, the city underwent a major transformation with the establishment of Jubail Industrial City, now the world’s largest industrial city, home to numerous petrochemical plants and oil refineries.",
             "map":"Explore Jubail on the Map",
 
             /* mall pageb */
@@ -687,52 +687,4 @@ toggleButton.addEventListener("click", function() {
     }
 });
 
-async function getWeather() {
-    try {
-        let response = await fetch("https://wttr.in/Jubail?format=%C+%t+%w");
-        let weatherText = await response.text();
 
-        // Use regex to split more smartly
-        // Example string: "Partly cloudy +32°C ↑5 km/h"
-        let match = weatherText.match(/^(.+?)\s+([+-]?\d+°[CF])\s+(.*)$/);
-        if (!match) throw new Error("Unexpected weather format");
-
-        let [, condition, temperature, wind] = match;
-
-        document.getElementById("temp").textContent = temperature;
-        document.getElementById("desc").textContent = `${condition}, Wind: ${wind}`;
-
-        let weatherIcons = {
-            "Clear": "https://cdn-icons-png.flaticon.com/512/869/869869.png",
-            "Sunny": "https://cdn-icons-png.flaticon.com/512/869/869869.png",
-            "Cloudy": "https://cdn-icons-png.flaticon.com/512/1163/1163624.png",
-            "Partly": "https://cdn-icons-png.flaticon.com/512/1163/1163636.png",
-            "Rain": "https://cdn-icons-png.flaticon.com/512/1163/1163657.png",
-            "Showers": "https://cdn-icons-png.flaticon.com/512/1163/1163657.png",
-            "Thunderstorm": "https://cdn-icons-png.flaticon.com/512/1163/1163661.png",
-            "Snow": "https://cdn-icons-png.flaticon.com/512/1163/1163673.png",
-            "Fog": "https://cdn-icons-png.flaticon.com/512/1163/1163685.png"
-        };
-
-        let weatherKey = Object.keys(weatherIcons).find(key => condition.includes(key));
-        document.getElementById("icon").src = weatherIcons[weatherKey] || "https://cdn-icons-png.flaticon.com/512/869/869869.png";
-
-    } catch (error) {
-        document.getElementById("desc").textContent = "Weather unavailable.";
-        document.getElementById("temp").textContent = "--";
-        document.getElementById("icon").src = "https://via.placeholder.com/100";
-        console.error("Error fetching weather:", error);
-    }
-}
-
-function updateTime() {
-    let now = new Date();
-    let timeString = now.toLocaleTimeString("en-US", { hour12: false });
-    let dateString = now.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
-
-    document.getElementById("jubail-time").textContent = timeString;
-    document.getElementById("jubail-date").textContent = dateString;
-}
-
-getWeather();
-setInterval(updateTime, 1000);

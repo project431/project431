@@ -9,6 +9,8 @@ body {
     scroll-behavior: smooth;
 }
 
+
+
 body.dark-mode {
     background-color: #9babc5;
     color: #303030;
@@ -98,9 +100,10 @@ h2, h3 {
     color: #333;
     font-weight: 700;
     font-size: 2rem;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    
 }
 
 /* Card Layout */
@@ -162,16 +165,17 @@ body.dark-mode header {
 }
 
 body.dark-mode nav ul li a {
-    color: #ababab;
+    color: #dfdfdf;
 }
 
 body.dark-mode nav {
-    background-color: #333;
+    background-color: #6b7981;
+    
 }
 
 body.dark-mode footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #6b7981;
+    color: #dfdfdf;;
 }
 
 /* Footer */
@@ -486,26 +490,6 @@ button {
     display: none;
   }
 
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-  .error-message {
-    color: #ff0000;
-    font-size: 18px;
-    margin-top: 20px;
-    display: none;
-  }
-
-  .loading-spinner {
-    display: none;
-    text-align: center;
-  }
   
-  .error-message {
-    display: none;
-    color: red;
-    text-align: center;
-  }
+  
   
