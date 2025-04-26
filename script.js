@@ -688,8 +688,3 @@ toggleButton.addEventListener("click", function() {
 });
 
 
-function changeImage() {
-    var image = document.getElementById('main-image');
-    var newImageSrc = "NEW_IMAGE_URL_HERE";  // Replace with the URL of the new image
-    image.src = newImageSrc;
-}
