@@ -8,7 +8,38 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="weather.css">
     
-    
+    <style>
+        .image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.arrow {
+    position: absolute;
+    top: 80%;
+    right: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: background 0.3s;
+}
+
+.arrow:hover {
+    background: #2980b9;
+}
+
+    </style>
 </head>
 <body>
 
@@ -17,8 +48,8 @@
     
         <img src="https://media-hosting.imagekit.io//eba24db1e42748f1/d38e1fc6-ee10-4eb6-b4d4-0a7a3487dead-removebg-preview.png?Expires=1836306884&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=fTNZgMGouc1VdyA3rr8QbGWpw-VgT3MMnW6Cz7i9mAvHbXj~qsMmn4-8bpKwonDUnK6zVgmDwcymsuwcbeVCbDycRcn7eKb382hgoVBsgv-tLAE~poBEIOnobRvF3zMFAiSy6i1xwlaEhQu7lVHXXaROHfkH9nCwi0SOq0uOgiYrcg1aAb7fkDgSSG~eYdog4kyyAedBCC~j25kbuEbIR4ltsAOB25pG9COaolxVZqo1fgKZM9XH8PZbVVJEmGy3NGM0DbryALVPjsm5-i0zwFm5BGQh5lrUneZajtZRAvR47dbS4EsmVUt~P3UBT6AMDv1GUttoWwcnVfxo5CGxJA__" alt="Logo" class="logo">     
        
-        <button id="lang-toggle" alt="Toggle Language" class="lang-btn" onclick="toggleLanguage()">🌐</button> <!-- chenage language  butten-->   
-        <button id="darkModeToggle" style="  top: 80px;">🌙</button>
+        <button id="lang-toggle" alt="Toggle Language" class="lang-btn" onclick="toggleLanguage()" title=" Language">🌐</button> <!-- Change language button-->
+<button id="darkModeToggle" style="top: 80px;" title=" Dark Mode">🌙</button> <!-- Dark mode button -->
 
         
     </header>
@@ -64,29 +95,41 @@
         <hr>
         
         <section id="about-jubail">
-            <h2 data-translate="about-webpage-title" > عن هذه الصفحة </h2>
-            <div class="text-image-container"class="text-image-container">
-                <p data-translate="about-page-text-1"> تم إنشاء هذه الصفحة لتكون دليلك الشامل لكل ما يخص مدينة الجبيل، حيث نقدم معلومات دقيقة حول أفضل الأماكن والخدمات المتاحة في المدينة. ستجد هنا تفاصيل عن مراكز التسوق، الفنادق، المطاعم، المرافق الصحية، المساجد، وأماكن الترفيه، مما يساعدك في استكشاف المدينة بسهولة.</p>
-                
-                <p data-translate="about-page-text-2"> هدفنا هو توفير مصدر موثوق يعكس جمال وتطور الجبيل، سواء كنت من سكانها أو زائرًا يبحث عن تجربة مميزة. نحرص على تحديث المعلومات باستمرار لضمان حصولك على أدق التفاصيل وأفضل التوصيات.  </p>
-                
-                <img src="https://media-hosting.imagekit.io//eba24db1e42748f1/d38e1fc6-ee10-4eb6-b4d4-0a7a3487dead-removebg-preview.png?Expires=1836306884&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=fTNZgMGouc1VdyA3rr8QbGWpw-VgT3MMnW6Cz7i9mAvHbXj~qsMmn4-8bpKwonDUnK6zVgmDwcymsuwcbeVCbDycRcn7eKb382hgoVBsgv-tLAE~poBEIOnobRvF3zMFAiSy6i1xwlaEhQu7lVHXXaROHfkH9nCwi0SOq0uOgiYrcg1aAb7fkDgSSG~eYdog4kyyAedBCC~j25kbuEbIR4ltsAOB25pG9COaolxVZqo1fgKZM9XH8PZbVVJEmGy3NGM0DbryALVPjsm5-i0zwFm5BGQh5lrUneZajtZRAvR47dbS4EsmVUt~P3UBT6AMDv1GUttoWwcnVfxo5CGxJA__" alt="Jubail Image">
+            <h2 data-translate="about-webpage-title">عن هذه الصفحة</h2>
+            <div class="text-image-container">
+                <p data-translate="about-page-text-1">
+                    تم إنشاء هذه الصفحة لتكون دليلك الشامل لكل ما يخص مدينة الجبيل، حيث نقدم معلومات دقيقة حول أفضل الأماكن والخدمات المتاحة في المدينة. ستجد هنا تفاصيل عن مراكز التسوق، الفنادق، المطاعم، المرافق الصحية، المساجد، وأماكن الترفيه، مما يساعدك في استكشاف المدينة بسهولة.
+                </p>
+        
+                <p data-translate="about-page-text-2">
+                    هدفنا هو توفير مصدر موثوق يعكس جمال وتطور الجبيل، سواء كنت من سكانها أو زائرًا يبحث عن تجربة مميزة. نحرص على تحديث المعلومات باستمرار لضمان حصولك على أدق التفاصيل وأفضل التوصيات.
+                </p>
+        
+                <div class="image-wrapper">
+                    <img id="image1" src="https://media-hosting.imagekit.io//eba24db1e42748f1/d38e1fc6-ee10-4eb6-b4d4-0a7a3487dead-removebg-preview.png?Expires=1836306884&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=fTNZgMGouc1VdyA3rr8QbGWpw-VgT3MMnW6Cz7i9mAvHbXj~qsMmn4-8bpKwonDUnK6zVgmDwcymsuwcbeVCbDycRcn7eKb382hgoVBsgv-tLAE~poBEIOnobRvF3zMFAiSy6i1xwlaEhQu7lVHXXaROHfkH9nCwi0SOq0uOgiYrcg1aAb7fkDgSSG~eYdog4kyyAedBCC~j25kbuEbIR4ltsAOB25pG9COaolxVZqo1fgKZM9XH8PZbVVJEmGy3NGM0DbryALVPjsm5-i0zwFm5BGQh5lrUneZajtZRAvR47dbS4EsmVUt~P3UBT6AMDv1GUttoWwcnVfxo5CGxJA__" alt="Jubail Image">
                     
+                </div>
             </div>
             <hr>
+        
+            <h2 data-translate="about-title">عن مدينة الجبيل</h2>
+        
+            <div class="text-image-container">
+                <p data-translate="about-text">
+                    تُعدُّ مدينة الجبيل من أقدم المدن الساحلية في المملكة العربية السعودية، حيث يعود تاريخها إلى أكثر من 7,000 عام. كانت تُعرف قديمًا بأنها مركزٌ مهمٌ للصيد والتجارة البحرية، نظرًا لموقعها الاستراتيجي على ساحل الخليج العربي.
+                </p>
+        
+                <p data-translate="about-text1">
+                    في العصور الإسلامية، كانت الجبيل محطة استراحة للتجار والمسافرين بين الموانئ الخليجية، وشهدت تطورًا تدريجيًا حتى العصر الحديث. في عام 1933، تم اكتشاف بئر ماء قديمة تُعرف باسم عين الجبيل، والتي تُعد من العلامات التاريخية للمدينة.
+                </p>
+        
+                <div class="image-wrapper">
+                    <img id="image2" src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRlaVyersIttz_uFc2eGKwRXYA3hK1lM_dI4jBK1VAJ6aimcykGRUPz_pzp7q-EJPGyKOl5QXMUogFEMwwuBm5xbbkF_0xboilasTSEmMA" alt="Jubail Image">
+                    <button onclick="changeImage('image2')" class="arrow">&#8594;</button>
+                </div>
+            </div>
+        </section>
 
-            <h2 data-translate="about-title" > عن مدينة الجبيل </h2>
-            
-            <div class="text-image-container"class="text-image-container">
-            <p data-translate="about-text">تُعدُّ مدينة الجبيل من أقدم المدن الساحلية في المملكة العربية السعودية، حيث يعود تاريخها إلى أكثر من 7,000 عام. 
-                كانت تُعرف قديمًا بأنها مركزٌ مهمٌ للصيد والتجارة البحرية، نظرًا لموقعها الاستراتيجي على ساحل الخليج العربي. </p>
-
-            <p data-translate="about-text1">في العصور الإسلامية، كانت الجبيل محطة استراحة للتجار والمسافرين بين الموانئ الخليجية، وشهدت تطورًا تدريجيًا حتى العصر الحديث. 
-                في عام 1933، تم اكتشاف بئر ماء قديمة تُعرف باسم عين الجبيل، والتي تُعد من العلامات التاريخية للمدينة. </p>
-
-            <img src="https://lh5.googleusercontent.com/p/AF1QipMKntrpxlfgwzrlQyCjaBNYfuqIo25YSBAvpe9Y=w426-h240-k-no" alt="Jubail Image">
-                
-        </div>
         <hr>
         </section>
         
@@ -146,6 +189,37 @@ function updateTime() {
     .catch(() => {
       document.getElementById("temp").textContent = "تعذر التحميل";
     });
-    </script>     
+    </script>   
+    <script>
+        // تغيير الصور عند الضغط على السهم
+// مصفوفة صور لكل جزء
+const images = {
+    
+    image2: [
+        "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRlaVyersIttz_uFc2eGKwRXYA3hK1lM_dI4jBK1VAJ6aimcykGRUPz_pzp7q-EJPGyKOl5QXMUogFEMwwuBm5xbbkF_0xboilasTSEmMA",
+        "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTTqVUMVwWaIqSE2fX80z9XbYjlLLx205yoJ3ZI-Kb4RMdRup-d84NMYXUgbvui77T-2pMoyLuD4xhgf5lfJeHWh9kTuLa6vqoONjSjJA",
+        "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQtYeAMEH0uFbxE_lIBijeQoKSO9KLZcSlT-OsbPcQZc7_w4cyrYsUkCoHhjcY_yBh8Z1va4Xrg66qao5MXe3wMU2GmdI7AFj3723GScA"
+    ]
+};
+
+// لتتبع الصورة الحالية
+const currentIndexes = {
+    image1: 0,
+    image2: 0
+};
+
+// وظيفة تغيير الصورة
+function changeImage(imageId) {
+    const img = document.getElementById(imageId);
+    currentIndexes[imageId]++;
+
+    if (currentIndexes[imageId] >= images[imageId].length) {
+        currentIndexes[imageId] = 0; // ارجع لأول صورة
+    }
+
+    img.src = images[imageId][currentIndexes[imageId]];
+}
+
+    </script>  
 </body>
 </html>
