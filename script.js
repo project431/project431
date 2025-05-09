@@ -342,7 +342,7 @@ function changeLanguage(lang) {
     "place-link-11": "Sparky's",
     "place-more-11": "More",
 
-    "place-name-12": "Ventura",
+    "place-name-12": "Fentura",
     "place-description-12": "Ventura Jubail is a unique entertainment project located in Jubail, Saudi Arabia. It features a wide range of cultural and recreational activities, making it an ideal destination for families and visitors.",
     "place-Features-12": "Features: Entertainment games, dedicated children's areas, diverse activities, family-friendly environment.",
     "place-location-12": "Location on Google Maps",
