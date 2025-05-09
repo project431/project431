@@ -19,7 +19,8 @@ header {
     background: url('https://media-hosting.imagekit.io/68972a5dba834a22/WhatsApp%20Image%202025-04-13%20at%2021.54.57_a03ae49c.jpg?Expires=1839178556&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=J7Z9Rs9sbnQui6fhlJNFGJRnhe~dxl95Ozg1GTrgu5byOQyLKippN~DapC~hucwoRWnDc8LIALhoHU2JB7Mdigw7onCqebeSU-V53fnOPayHuDuMzBNhmmahWSZGC~lK1gmQoVNmM6sFzsZuKI-SWKvYmODqhQRk2pkCZBl96hNk6OFQYQfJpNjfjz~oPKoEPIEdXBggCm97EqA8Kk3v~y7rc~XLn7~sr~j4GtU~gl4MV~nMkaO5lnKzeCVZKOFDOP2jIGy8xdkoG0SVvtJea3dYrj5LYTNuhaNpH3Opzzu4jiI9IvinopslwgKarGCaED6azPQMCqkezIbKD0qQsg__') no-repeat center center/cover;
     height: 80px;
     backdrop-filter: blur(8px);
-    background-color: #333;
+    background-color: #3498db;
+    
     color: #fff;
     padding: 15px 10px;
     position: relative;
@@ -176,7 +177,7 @@ body.dark-mode footer {
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #3498db;
     color: #fff;
     text-align: center;
     padding: 35px 20px;

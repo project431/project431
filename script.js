@@ -327,6 +327,27 @@ function changeLanguage(lang) {
 "place-Features-7": "Features: Central fountain, comfortable seating, seasonal events, suitable for youth and families, clean grassy areas.",
 "place-location-7": "Location on Google Maps",
 "place-link-7": "Najd Park",
+
+"place-name-10": "VOX Cinema",
+    "place-description-10": "VOX Cinema in Jubail is one of the leading entertainment destinations in the city, offering a distinctive cinematic experience with a wide variety of modern movies. It features advanced display technologies and surround sound, making it a perfect destination for cinema lovers.",
+    "place-Features-10": "Features: Unique cinematic experience, new movies, comfortable seating, diverse snack options.",
+    "place-location-10": "Location on Google Maps",
+    "place-link-10": "VOX Cinema",
+    "place-more-10": "More",
+
+    "place-name-11": "Sparky's",
+    "place-description-11": "Sparky's is the largest and most famous entertainment center in the Middle East. It has been a major brand in the region since Al Hokair Group established it in 1978 in Saudi Arabia, becoming the best family entertainment and leisure center group in the region.",
+    "place-Features-11": "Features: Various entertainment games, dedicated children's areas, diverse food options, family-friendly environment.",
+    "place-location-11": "Location on Google Maps",
+    "place-link-11": "Sparky's",
+    "place-more-11": "More",
+
+    "place-name-12": "Ventura",
+    "place-description-12": "Ventura Jubail is a unique entertainment project located in Jubail, Saudi Arabia. It features a wide range of cultural and recreational activities, making it an ideal destination for families and visitors.",
+    "place-Features-12": "Features: Entertainment games, dedicated children's areas, diverse activities, family-friendly environment.",
+    "place-location-12": "Location on Google Maps",
+    "place-link-12": "Ventura"
+
          
         },
 
@@ -647,6 +668,27 @@ function changeLanguage(lang) {
             "place-Features-7":" المميزات: نافورة مركزية، جلسات مريحة، فعاليات موسمية، مناسب للشباب والعوائل، مسطحات خضراء نظيفة.",
             "place-location-7":"الموقع على خرائط جوجل",
             "place-link-7":"منتزه نجد",
+            
+            "place-name-10":"سينما فوكس",
+            "place-description-10":"سينما فوكس في الجبيل هي واحدة من الوجهات الترفيهية الرائدة في المدينة، حيث تقدم تجربة سينمائية متميزة مع مجموعة متنوعة من الأفلام الحديثة. تتميز بتقنيات عرض متطورة وصوت محيطي، مما يجعلها وجهة مثالية لعشاق السينما.",
+            "place-Features-10":"المميزات:  تجربة سينمائية فريدة، أفلام جديدة، مقاعد مريحة، خيارات متنوعة من الوجبات الخفيفة.",
+            "place-location-10":"الموقع على خرائط جوجل",
+            "place-link-10":"سينما فوكس",
+            "place-more-10":"المزيد",
+
+            "place-name-11" :"سباركيز",
+            "place-description-11" : "سباركيز هو أكبر وأشهر مركز ترفيهي في الشرق الأوسط، وهو علامة كبيرة في المنطقة منذ أن قامت مجموعة الحكير بتأسيسه عام 1978 في المملكة العربية السعودية، قبل أن تصبح أفضل مجموعة مراكز للترفيه العائلي والتنزه في المنطقة.",
+            "place-Features-11":"المميزات: ألعاب ترفيهية متنوعة، مناطق مخصصة للأطفال، خيارات طعام متنوعة، بيئة عائلية.",
+            "place-location-11":"الموقع على خرائط جوجل",
+            "place-link-11":"سباركيز",
+            "place-more-11":"المزيد",
+
+            "place-name-12":"فـنـتـورا",
+            "place-description-12":"فـنـتـورا الجبيل هو مشروع ترفيهي فريد يقع في مدينة الجبيل بالمملكة العربية السعودية. يتميز بتقديم مجموعة متنوعة من الأنشطة الثقافية والترفيهية، مما يجعله وجهة مثالية للعائلات والزوار.",
+            "place-features-12":"المميزات: ألعاب ترفيهية، مناطق مخصصة للأطفال، خيارات متنوعة من الأنشطة، بيئة عائلية.",
+            "place-location-12":"الموقع على خرائط جوجل",
+            "place-link-12":"فـنـتـورا",
+
         }
     };
 
