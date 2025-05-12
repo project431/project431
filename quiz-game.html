@@ -3,494 +3,240 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> اختبار معلومات عن الجبيل - Jubail Quiz</title>
+  <title>اختبار معلومات عن الجبيل - Jubail Quiz</title>
   <style>
-    body {
-      font-family: 'Cairo', sans-serif;
-      text-align: center;
-      background: linear-gradient(135deg, #4a90e2, #50e3c2);
-      direction: rtl;
-      margin: 0;
-      padding: 0;
-      transition: background-color 0.5s;
-    }
-    .quiz-container {
-      width: 90%;
-      max-width: 600px;
-      margin: 50px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-      position: relative;
-    }
-    h1 {
-      color: #007bff;
-      margin-bottom: 20px;
-      font-size: 28px;
-    }
-    .question {
-      font-size: 24px;
-      margin-bottom: 20px;
-      font-weight: bold;
-      color: #333;
-    }
-    .option {
-      display: block;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      padding: 15px;
-      margin: 10px auto;
-      width: 85%;
-      border-radius: 10px;
-      cursor: pointer;
-      font-size: 18px;
-      transition: background-color 0.3s, transform 0.3s;
-      animation: fadeIn 0.5s;
-    }
-    .option:hover {
-      background-color: #0056b3;
-      transform: scale(1.05);
-    }
-    .option.correct {
-      background-color: green;
-    }
-    .option.incorrect {
-      background-color: red;
-    }
-    #result {
-      font-size: 22px;
-      font-weight: bold;
-      margin-top: 20px;
-      color: #333;
-    }
-    button.control-btn {
-      background-color: #28a745;
-      color: white;
-      border: none;
-      padding: 12px 18px;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      margin: 10px;
-    }
-    button.control-btn:hover {
-      background-color: #218838;
-    }
-    .progress-bar {
-      position: absolute;
-      top: 10px;
-      left: 0;
-      height: 5px;
-      width: 100%;
-      background-color: #f3f3f3;
-    }
-    .progress {
-      height: 100%;
-      width: 0;
-      background-color: #007bff;
-      transition: width 0.5s ease;
-    }
-    #timer {
-      font-size: 20px;
-      color: red;
-      margin-top: 10px;
-    }
-    #progress-indicator {
-      font-size: 18px;
-      margin-top: 10px;
-      color: #333;
-    }
-    .loading {
-      display: none;
-      font-size: 24px;
-      color: #007bff;
-      margin-top: 20px;
-    }
-    #leaderboard {
-      margin-top: 30px;
-      display: none;
-    }
-    .leaderboard-entry {
-      margin: 5px 0;
-      font-size: 18px;
-    }
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-    #visual-timer {
-      width: 100%;
-      height: 10px;
-      background-color: #f3f3f3;
-      border-radius: 5px;
-      overflow: hidden;
-      margin-top: 10px;
-    }
-    #timer-fill {
-      height: 100%;
-      background-color: red;
-      width: 100%;
-      transition: width 1s linear;
-    }
-    /* Final score screen styling */
-    #final-score {
-      padding: 30px;
-    }
+    body { font-family: 'Cairo', sans-serif; text-align: center; background: linear-gradient(135deg, #4a90e2, #50e3c2); direction: rtl; margin: 0; padding: 0; }
+    .quiz-container { width: 90%; max-width: 600px; margin: 40px auto; background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    h1 { color: #007bff; font-size: 1.8rem; margin-bottom: 10px; }
+    #progress-indicator { font-size: 1rem; color: #555; margin-bottom: 5px; }
+    .progress-bar { width: 100%; background: #e9ecef; height: 8px; border-radius: 4px; overflow: hidden; margin: 10px 0; }
+    .progress { width: 0; height: 100%; background: #007bff; transition: width 0.5s ease; }
+    #timer { font-size: 1rem; color: #dc3545; margin: 10px 0; }
+    .question { font-size: 1.2rem; margin: 15px 0; color: #333; min-height: 60px; }
+    .option { display: block; background: #007bff; color: #fff; border: none; padding: 12px; margin: 8px auto; width: 80%; border-radius: 8px; cursor: pointer; font-size: 1rem; transition: background 0.3s; }
+    .option:hover { background: #0056b3; }
+    .correct { background: #28a745 !important; }
+    .incorrect { background: #dc3545 !important; }
+    #result { font-size: 1.1rem; margin-top: 10px; min-height: 24px; }
+    .control-btn { background: #28a745; color: #fff; border: none; padding: 10px 16px; font-size: 1rem; border-radius: 6px; cursor: pointer; margin: 6px; transition: background 0.3s; }
+    .control-btn:hover { background: #218838; }
+    #final-score { display: none; margin-top: 20px; }
   </style>
 </head>
 <body>
-  <div class="quiz-container" role="application" aria-labelledby="quiz-title">
-    <div id="quiz-content">
-      <h1 id="quiz-title">اختبار معلومات عن مدينة الجبيل - Jubail Knowledge Quiz</h1>
-      <button id="lang-btn" class="control-btn" aria-label="تغيير اللغة">🔄</button>
-      <button id="reset-btn" class="control-btn" aria-label="إعادة الاختبار">🔄 إعادة</button>
-      <button id="theme-btn" class="control-btn" aria-label="تغيير السمة">🌙</button>
-      <div class="progress-bar">
-        <div id="progress" class="progress"></div>
-      </div>
-      <p class="loading" id="loading">جارٍ تحميل السؤال...</p>
-      <p class="question" id="question"></p>
-      <div id="options"></div>
-      <p id="result"></p>
-      <!-- Display current score -->
-      <p id="score" aria-live="polite">0</p>
-      <div id="visual-timer">
-        <div id="timer-fill"></div>
-      </div>
-      <div id="timer"></div>
-      <p id="progress-indicator"></p>
-      <button id="next-btn" class="control-btn" disabled aria-label="السؤال التالي">➡</button>
-      <div id="leaderboard">
-        <h2>لوحة المتصدرين</h2>
-        <div id="entries"></div>
-        <input type="text" id="nameInput" placeholder="ادخل اسمك" />
-        <button id="submit-score-btn" class="control-btn">إرسال</button>
-      </div>
+  <div class="quiz-container" role="region" aria-labelledby="quiz-title">
+    <h1 id="quiz-title">اختبار معلومات عن الجبيل</h1>
+    <div id="progress-indicator">1 / 10</div>
+    <div class="progress-bar"><div id="progress" class="progress"></div></div>
+    <p id="timer">20s</p>
+    <p class="question" id="question"></p>
+    <div id="options"></div>
+    <p id="result"></p>
+    <button id="next-btn" class="control-btn" disabled>➡</button>
+    <button id="reset-btn" class="control-btn">🔄 إعادة</button>
+    <button id="lang-btn" class="control-btn">EN</button>
+    <div id="final-score">
+      <h2 id="score-text">0 / 10</h2>
+      <button id="restart-btn" class="control-btn">🔄 إعادة</button>
     </div>
-    <div id="final-score" style="display:none;"></div>
   </div>
-
-  <audio id="correct-sound" src="correct.mp3" preload="auto"></audio>
-  <audio id="incorrect-sound" src="incorrect.mp3" preload="auto"></audio>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      const translations = {
+        ar: {
+          title: 'اختبار معلومات عن الجبيل',
+          correct: 'إجابة صحيحة!',
+          incorrect: 'إجابة خاطئة!',
+          next: '➡',
+          reset: '🔄 إعادة',
+          lang: 'EN'
+        },
+        en: {
+          title: 'Jubail Quiz',
+          correct: 'Correct!',
+          incorrect: 'Wrong!',
+          next: '➡',
+          reset: '🔄 Reset',
+          lang: 'عرب'
+        }
+      };
+
       class Quiz {
         constructor(questions) {
           this.questions = questions;
-          this.totalQuestions = questions.length;
-          this.currentQuestionIndex = 0;
+          this.index = 0;
           this.score = 0;
           this.isArabic = true;
-          this.answered = false;
-          this.timerInterval = null;
-          this.currentCorrectIndex = null;
-          this.theme = 'light';
-          this.leaderboard = JSON.parse(localStorage.getItem('leaderboard')) || [];
+          this.timerId = null;
+          this.timeLeft = 20;
           // Cache DOM elements
-          this.quizContainer = document.querySelector('.quiz-container');
-          this.quizContent = document.getElementById('quiz-content');
-          this.finalScoreEl = document.getElementById('final-score');
-          this.questionEl = document.getElementById('question');
-          this.optionsEl = document.getElementById('options');
-          this.resultEl = document.getElementById('result');
-          this.scoreEl = document.getElementById('score');
-          this.progressEl = document.getElementById('progress');
-          this.progressIndicatorEl = document.getElementById('progress-indicator');
-          this.loadingEl = document.getElementById('loading');
-          this.timerEl = document.getElementById('timer');
-          this.timerFillEl = document.getElementById('timer-fill');
-          this.nextBtn = document.getElementById('next-btn');
-          this.leaderboardEl = document.getElementById('leaderboard');
-          this.entriesEl = document.getElementById('entries');
-          this.nameInput = document.getElementById('nameInput');
+          this.titleEl      = document.getElementById('quiz-title');
+          this.progressBar  = document.getElementById('progress');
+          this.progressInd  = document.getElementById('progress-indicator');
+          this.timerEl      = document.getElementById('timer');
+          this.questionEl   = document.getElementById('question');
+          this.optionsEl    = document.getElementById('options');
+          this.resultEl     = document.getElementById('result');
+          this.nextBtn      = document.getElementById('next-btn');
+          this.resetBtn     = document.getElementById('reset-btn');
+          this.langBtn      = document.getElementById('lang-btn');
+          this.finalEl      = document.getElementById('final-score');
+          this.scoreText    = document.getElementById('score-text');
+          this.restartBtn   = document.getElementById('restart-btn');
         }
-      
-        // Shuffle options and return shuffled array and new correct answer index
-        shuffleOptions(options, correctIndex) {
-          const arr = [...options];
-          const correctAnswer = arr.splice(correctIndex, 1)[0];
-          arr.sort(() => Math.random() - 0.5);
-          const newIndex = Math.floor(Math.random() * (arr.length + 1));
-          arr.splice(newIndex, 0, correctAnswer);
-          return { shuffledOptions: arr, newCorrectIndex: newIndex };
+
+        init() {
+          this.nextBtn.onclick    = () => this.nextQuestion();
+          this.resetBtn.onclick   = () => this.restart();
+          this.restartBtn.onclick = () => this.restart();
+          this.langBtn.onclick    = () => this.toggleLang();
+          this.loadQuestion();
         }
-      
-        // Create an option button and attach a click event
-        createOptionButton(text, index, correctIndex, question) {
-          const btn = document.createElement('button');
-          btn.classList.add('option');
-          btn.innerText = text;
-          btn.addEventListener('click', () => {
-            if (!this.answered) {
-              this.disableOptionButtons();
-              this.handleAnswer(index, correctIndex, question);
-            }
-          });
-          return btn;
-        }
-      
-        // Disable all option buttons to prevent multiple clicks
-        disableOptionButtons() {
-          document.querySelectorAll('.option').forEach(btn => btn.disabled = true);
-        }
-      
-        // Load and display the current question
+
         loadQuestion() {
-          const currentQuestion = this.questions[this.currentQuestionIndex];
-          this.questionEl.innerText = currentQuestion.question;
-          const { shuffledOptions, newCorrectIndex } = this.shuffleOptions(
-            currentQuestion.options, currentQuestion.correctIndex);
-          this.currentCorrectIndex = newCorrectIndex;
-      
-          // Clear previous options
-          this.optionsEl.innerHTML = '';
-          shuffledOptions.forEach((text, index) => {
-            const optionButton = this.createOptionButton(text, index, newCorrectIndex, currentQuestion);
-            this.optionsEl.appendChild(optionButton);
-          });
-      
-          // Reset timer and progress bar
-          this.resetTimer();
-      
-          // Enable the next button for the next round
+          clearInterval(this.timerId);
+          this.timeLeft = 20;
+          this.finalEl.style.display = 'none';
           this.nextBtn.disabled = true;
+          this.resultEl.textContent = '';
+
+          const q = this.questions[this.index];
+          const lang = this.isArabic ? 'ar' : 'en';
+
+          // Update static UI
+          this.titleEl.textContent       = translations[lang].title;
+          this.progressInd.textContent   = `${this.index + 1} / ${this.questions.length}`;
+          this.progressBar.style.width   = `${(this.index / this.questions.length) * 100}%`;
+          this.timerEl.textContent       = `${this.timeLeft}s`;
+          this.langBtn.textContent       = translations[lang].lang;
+          this.resetBtn.textContent      = translations[lang].reset;
+          this.nextBtn.textContent       = translations[lang].next;
+
+          // Render question & options
+          this.questionEl.textContent = q[lang].question;
+          this.optionsEl.innerHTML    = '';
+          q[lang].options.forEach((opt, i) => {
+            const btn = document.createElement('button');
+            btn.className = 'option';
+            btn.textContent = opt;
+            btn.onclick = () => this.selectAnswer(i);
+            this.optionsEl.appendChild(btn);
+          });
+
+          this.startTimer();
         }
-      
-        // Start the timer countdown
+
         startTimer() {
-          let remainingTime = 30;
-          this.timerEl.innerText = `${remainingTime} ثوانٍ`;
-          this.timerFillEl.style.width = '100%';
-      
-          this.timerInterval = setInterval(() => {
-            remainingTime--;
-            this.timerEl.innerText = `${remainingTime} ثوانٍ`;
-            this.timerFillEl.style.width = `${(remainingTime / 30) * 100}%`;
-            if (remainingTime === 0) {
-              clearInterval(this.timerInterval);
-              this.handleAnswer(null, this.currentCorrectIndex, this.questions[this.currentQuestionIndex]);
+          this.timerId = setInterval(() => {
+            this.timeLeft--;
+            this.timerEl.textContent = `${this.timeLeft}s`;
+            if (this.timeLeft <= 0) {
+              clearInterval(this.timerId);
+              this.selectAnswer(null);
             }
           }, 1000);
         }
-      
-        // Reset the timer to initial state
-        resetTimer() {
-          clearInterval(this.timerInterval);
-          this.startTimer();
-        }
-      
-        // Handle user answer
-        handleAnswer(index, correctIndex, question) {
-          if (index === correctIndex) {
+
+        selectAnswer(i) {
+          clearInterval(this.timerId);
+          const q = this.questions[this.index];
+          const correctIdx = q.correct;
+          const lang = this.isArabic ? 'ar' : 'en';
+
+          if (i === correctIdx) {
             this.score++;
-            this.resultEl.innerText = 'إجابة صحيحة!';
-            this.resultEl.style.color = 'green';
-            document.getElementById('correct-sound').play();
+            this.resultEl.textContent = translations[lang].correct;
           } else {
-            this.resultEl.innerText = 'إجابة خاطئة!';
-            this.resultEl.style.color = 'red';
-            document.getElementById('incorrect-sound').play();
+            this.resultEl.textContent = translations[lang].incorrect;
           }
-      
-          // Highlight the correct answer
-          document.querySelectorAll('.option')[correctIndex].classList.add('correct');
-          if (index !== correctIndex) {
-            document.querySelectorAll('.option')[index].classList.add('incorrect');
-          }
-      
-          // Enable next button
+
+          Array.from(this.optionsEl.children).forEach((btn, idx) => {
+            btn.disabled = true;
+            if (idx === correctIdx) btn.classList.add('correct');
+            if (i === idx && idx !== correctIdx) btn.classList.add('incorrect');
+          });
+
           this.nextBtn.disabled = false;
-          this.answered = true;
         }
-      
-        // Display the final score screen
-        showFinalScore() {
-          this.finalScoreEl.innerHTML = `
-            <h2>النتيجة النهائية: ${this.score} من ${this.totalQuestions}</h2>
-            <button id="restart-btn" class="control-btn">إعادة الاختبار</button>
-          `;
-          this.finalScoreEl.style.display = 'block';
-          this.quizContainer.classList.add('final');
-      
-          // Add restart button functionality
-          document.getElementById('restart-btn').addEventListener('click', () => {
-            window.location.reload(); // Refresh the page to reset everything
-          });
-        }
-      
-        // Update progress bar and indicator
-        updateProgressBar() {
-          const progressPercentage = (this.currentQuestionIndex / this.totalQuestions) * 100;
-          this.progressEl.style.width = `${progressPercentage}%`;
-          this.progressIndicatorEl.innerText = `${this.currentQuestionIndex + 1} من ${this.totalQuestions}`;
-        }
-      
-        // Show leaderboard after quiz
-        showLeaderboard() {
-          this.leaderboardEl.style.display = 'block';
-          this.entriesEl.innerHTML = '';
-          this.leaderboard.forEach(entry => {
-            const entryEl = document.createElement('div');
-            entryEl.classList.add('leaderboard-entry');
-            entryEl.innerText = `${entry.name}: ${entry.score}`;
-            this.entriesEl.appendChild(entryEl);
-          });
-        }
-      
-        // Submit final score to leaderboard
-        submitLeaderboard() {
-          const name = this.nameInput.value.trim();
-          if (name) {
-            this.leaderboard.push({ name, score: this.score });
-            localStorage.setItem('leaderboard', JSON.stringify(this.leaderboard));
-            this.showLeaderboard();
+
+        nextQuestion() {
+          this.index++;
+          if (this.index < this.questions.length) {
+            this.loadQuestion();
+          } else {
+            this.showFinal();
           }
         }
-      
-        // Initialize the quiz
-        init() {
+
+        showFinal() {
+          clearInterval(this.timerId);
+          this.finalEl.style.display = 'block';
+          this.scoreText.textContent = `${this.score} / ${this.questions.length}`;
+        }
+
+        restart() {
+          clearInterval(this.timerId);
+          this.index = 0;
+          this.score = 0;
           this.loadQuestion();
-          this.updateProgressBar();
-      
-          this.nextBtn.addEventListener('click', () => {
-            this.currentQuestionIndex++;
-            if (this.currentQuestionIndex < this.totalQuestions) {
-              this.loadQuestion();
-              this.updateProgressBar();
-              this.resultEl.innerText = '';
-              this.answered = false;
-            } else {
-              this.showFinalScore();
-            }
-          });
-      
-          document.getElementById('submit-score-btn').addEventListener('click', () => {
-            this.submitLeaderboard();
-          });
-      
-          document.getElementById('reset-btn').addEventListener('click', () => {
-            this.resetQuiz();
-          });
-      
-          // Handle theme toggle
-          document.getElementById('theme-btn').addEventListener('click', () => {
-            this.toggleTheme();
-          });
         }
-      
-        // Reset the quiz
-        resetQuiz() {
-          window.location.reload();
-        }
-      
-        // Toggle between light and dark theme
-        toggleTheme() {
-          if (this.theme === 'light') {
-            this.theme = 'dark';
-            this.quizContainer.style.background = '#333';
-            document.body.style.background = '#000';
-          } else {
-            this.theme = 'light';
-            this.quizContainer.style.background = '#fff';
-            document.body.style.background = 'linear-gradient(135deg, #4a90e2, #50e3c2)';
+
+        toggleLang() {
+          // Flip language flag
+          this.isArabic = !this.isArabic;
+          // Swap only on-screen text without resetting state
+          const lang = this.isArabic ? 'ar' : 'en';
+          // Static labels
+          this.titleEl.textContent     = translations[lang].title;
+          this.progressInd.textContent = `${this.index + 1} / ${this.questions.length}`;
+          this.progressBar.style.width = `${(this.index / this.questions.length) * 100}%`;
+          this.timerEl.textContent     = `${this.timeLeft}s`;
+          this.langBtn.textContent     = translations[lang].lang;
+          this.resetBtn.textContent    = translations[lang].reset;
+          this.nextBtn.textContent     = translations[lang].next;
+          // Question & options
+          const q = this.questions[this.index];
+          this.questionEl.textContent = q[lang].question;
+          Array.from(this.optionsEl.children).forEach((btn, idx) => {
+            btn.textContent = q[lang].options[idx];
+          });
+          // Result if already answered
+          if (this.resultEl.textContent) {
+            const prevLang = this.isArabic ? 'en' : 'ar';
+            const wasCorrect = this.resultEl.textContent === translations[prevLang].correct;
+            this.resultEl.textContent = wasCorrect
+              ? translations[lang].correct
+              : translations[lang].incorrect;
           }
         }
       }
-      
-      // Quiz questions
+
       const questions = [
-  {
-    question: 'في أي عام تم تأسيس مدينة الجبيل الصناعية رسميًا؟',
-    options: ['1975', '1983', '1990', '2005'],
-    correctIndex: 0
-  },
-  {
-    question: 'ما هي الجهة المسؤولة عن تطوير مدينة الجبيل الصناعية؟',
-    options: ['أرامكو السعودية', 'سابك', 'الهيئة الملكية للجبيل وينبع', 'وزارة التجارة'],
-    correctIndex: 2
-  },
-  {
-    question: 'ما هو أكبر مجمع صناعي في الجبيل الصناعية؟',
-    options: ['مجمع الجبيل 1', 'مجمع الجبيل 2', 'مجمع سابك', 'مجمع أرامكو'],
-    correctIndex: 1
-  },
-  {
-    question: 'ما هو دور مدينة الجبيل الصناعية في الاقتصاد السعودي؟',
-    options: ['إنتاج النفط الخام', 'تطوير السياحة', 'تصنيع البتروكيماويات والمعادن', 'الزراعة وإنتاج الغذاء'],
-    correctIndex: 2
-  },
-  {
-    question: 'ما هو الميناء الصناعي الرئيسي في الجبيل الصناعية؟',
-    options: ['ميناء الملك عبدالعزيز', 'ميناء الجبيل الصناعي', 'ميناء الدمام', 'ميناء جدة الإسلامي'],
-    correctIndex: 1
-  },
-  {
-    question: 'ما هي الميزة الرئيسية لمدينة الجبيل الصناعية مقارنةً بالمدن الأخرى؟',
-    options: ['كونها مدينة تجارية', 'تخصصها في الصناعات الثقيلة والبتروكيماويات', 'كونها منطقة سياحية', 'كونها مدينة تاريخية'],
-    correctIndex: 1
-  },
-  {
-    question: 'أي من الشركات التالية يقع مقرها الرئيسي في الجبيل الصناعية؟',
-    options: ['سابك', 'أرامكو السعودية', 'الخطوط السعودية', 'STC'],
-    correctIndex: 0
-  },
-  {
-    question: 'ما هو أكبر مشروع توسعة صناعية في الجبيل؟',
-    options: ['نيوم', 'الجبيل 2', 'البحر الأحمر', 'أمالا'],
-    correctIndex: 1
-  },
-  {
-    question: 'ما هي أبرز الصناعات التحويلية في الجبيل الصناعية؟',
-    options: ['صناعة الطيران', 'صناعة السيارات', 'إنتاج البلاستيك والمواد الكيماوية', 'صناعة السفن'],
-    correctIndex: 2
-  },
-  {
-    question: 'ما هو عدد السكان التقريبي لمدينة الجبيل الصناعية؟',
-    options: ['100,000 نسمة', '200,000 نسمة', '400,000 نسمة', '500,000 نسمة'],
-    correctIndex: 2
-  },
-  {
-    question: 'ما هي أهم عوامل الجذب السكني في الجبيل الصناعية؟',
-    options: ['توفر مراكز التسوق الفاخرة فقط', 'وجود شبكة مواصلات متكاملة', 'مستوى المعيشة العالي وجودة البنية التحتية', 'توفر مناطق أثرية'],
-    correctIndex: 2
-  },
-  {
-    question: 'ما هو أبرز المعالم السياحية في الجبيل الصناعية؟',
-    options: ['برج المملكة', 'كورنيش الجبيل', 'منتزه الردف', 'مركز الملك عبدالله المالي'],
-    correctIndex: 1
-  },
-  {
-    question: 'أي من هذه المشاريع البيئية موجود في الجبيل الصناعية؟',
-    options: ['المحمية الملكية للحياة الفطرية', 'مركز معالجة المياه وإعادة التدوير', 'مشروع توسعة البحر الأحمر', 'مدينة الطاقة المستدامة'],
-    correctIndex: 1
-  },
-  {
-    question: 'ما هي أبرز الشركات التي تعمل في مجال البتروكيماويات في الجبيل الصناعية؟',
-    options: ['سابك', 'أرامكو السعودية', 'هيونداي', 'مايكروسوفت'],
-    correctIndex: 0
-  },
-  {
-    question: 'ما هو نظام النقل العام المستخدم في مدينة الجبيل الصناعية؟',
-    options: ['شبكة مترو متكاملة', 'حافلات نقل جماعي وخطط مستقبلية للقطارات', 'نظام سيارات أجرة فقط', 'لا يوجد نظام نقل عام'],
-    correctIndex: 1
-  }
-];
+        { ar: { question: 'في أي عام تأسست الجبيل؟',     options: ['1975','1983','1990','2005'] },
+          en: { question: 'When was Jubail founded?',     options: ['1975','1983','1990','2005'] }, correct: 0 },
+        { ar: { question: 'المسؤول عن تطوير الجبيل هو؟', options: ['أرامكو','سابك','الهيئة الملكية','وزارة'] },
+          en: { question: 'Who develops Jubail?',         options: ['Aramco','SABIC','Royal Commission','Ministry'] }, correct: 2 },
+        { ar: { question: 'أكبر مجمع صناعي؟',           options: ['جبيل 1','جبيل 2','سابك','أرامكو'] },
+          en: { question: 'Largest industrial complex?',  options: ['Jubail I','Jubail II','SABIC','Aramco'] }, correct: 1 },
+        { ar: { question: 'دور الجبيل الاقتصادي؟',       options: ['زراعة','سياحة','بتروكيماويات','نفط'] },
+          en: { question: 'Jubail’s economic role?',      options: ['Agriculture','Tourism','Petrochemicals','Oil'] }, correct: 2 },
+        { ar: { question: 'ميناء الجبيل؟',               options: ['عبدالعزيز','جبيل صناعي','الدمام','جدة'] },
+          en: { question: 'Jubail port?',                 options: ['Abdulaziz','Industrial Jubail','Dammam','Jeddah'] }, correct: 1 },
+        { ar: { question: 'شركة مقرها جبيل؟',           options: ['سابك','أرامكو','الخطوط','STC'] },
+          en: { question: 'Company in Jubail?',           options: ['SABIC','Aramco','Airlines','STC'] }, correct: 0 },
+        { ar: { question: 'نظام النقل؟',                options: ['مترو','حافلات','تاكسي','لا شيء'] },
+          en: { question: 'Transport system?',            options: ['Metro','Buses','Taxi','None'] }, correct: 1 },
+        { ar: { question: 'مشروع توسعة؟',               options: ['نيوم','جبيل 2','أمالا','البحر الأحمر'] },
+          en: { question: 'Expansion project?',           options: ['Neom','Jubail II','Amala','Red Sea'] }, correct: 1 },
+        { ar: { question: 'أبرز صناعة؟',                options: ['سيارات','بلاستيك','سفن','طيران'] },
+          en: { question: 'Major industry?',              options: ['Cars','Plastic','Ships','Aerospace'] }, correct: 1 },
+        { ar: { question: 'عدد السكان؟',                 options: ['100k','200k','400k','500k'] },
+          en: { question: 'Population?',                 options: ['100k','200k','400k','500k'] }, correct: 2 }
+      ];
 
-
-
-      
-      // Initialize the quiz
-      const quiz = new Quiz(questions);
-      quiz.init();
+      new Quiz(questions).init();
     });
   </script>
 </body>
 </html>
-
-
-
-

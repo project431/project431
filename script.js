@@ -8,8 +8,9 @@ function toggleLanguage() {
 function changeLanguage(lang) {
     const translations = {
         en: {
-            
+            "footer":"2025 Jubail Industrial City Guide",
             /*button */
+            "quiz": "Jubail Quiz",
             "home-button": "Home",
             "mall-button": "Shopping",
             "hotels-button": "Accommodation",
@@ -352,7 +353,9 @@ function changeLanguage(lang) {
         },
 
         ar: {
+            "footer":"2025 دليل مدينة الجبيل الصناعية",
            /*button */
+            "quiz": "اختبار معلومات عن الجبيل",
             "home-button": "الرئيسية",
             "mall-button": "مراكز التسوق",
             "hotels-button": "الإقامة",
@@ -596,7 +599,7 @@ function changeLanguage(lang) {
             "healthcare-more-5":"المزيد",
             
             /* GYM page */
-            "gym-title":"أفضل صالات رياضية في الجبيل",
+            "gym":"أفضل صالات رياضية في الجبيل",
 
             "gym-name-1": "سناب فتنس",
             "gym-price-1":"💰💰💰 (متوسط)",
